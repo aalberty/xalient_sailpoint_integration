@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_properties">
+    <sys_properties action="INSERT_OR_UPDATE">
+        <choices/>
+        <description>Client Secret for your OAuth Application</description>
+        <ignore_cache>true</ignore_cache>
+        <is_private>false</is_private>
+        <name>x_xal_idconnect.cya_client_secret</name>
+        <read_roles/>
+        <suffix>cya_client_secret</suffix>
+        <sys_class_name>sys_properties</sys_class_name>
+        <sys_created_by>mark.cheek@xalient.com</sys_created_by>
+        <sys_created_on>2025-07-22 23:37:18</sys_created_on>
+        <sys_id>d408addb1bb2e29044165391604bcbbc</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>x_xal_idconnect.cya_client_secret</sys_name>
+        <sys_package display_value="Xalient Identity Connect" source="x_xal_idconnect">14a34acb93556210a06d7b018bba10ef</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Xalient Identity Connect">14a34acb93556210a06d7b018bba10ef</sys_scope>
+        <sys_update_name>sys_properties_d408addb1bb2e29044165391604bcbbc</sys_update_name>
+        <sys_updated_by>mark.cheek@xalient.com</sys_updated_by>
+        <sys_updated_on>2025-07-22 23:43:44</sys_updated_on>
+        <type>password2</type>
+        <value>{{gpaes}}xlHxQiPe6T8znRpEYJso0tGI2DTNoUlNuWhbb6i7A9gbmUk/Y+hJ61bovT4yl7Td</value>
+        <write_roles/>
+    </sys_properties>
+    <sys_translated_text action="delete_multiple" query="documentkey=d408addb1bb2e29044165391604bcbbc"/>
+</record_update>

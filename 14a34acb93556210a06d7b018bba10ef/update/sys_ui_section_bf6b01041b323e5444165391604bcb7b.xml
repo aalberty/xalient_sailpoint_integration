@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_ui_section caption="" section_id="bf6b01041b323e5444165391604bcb7b" sys_domain="global" table="x_xal_idconnect_approval_rule" version="3" view="">
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>name</element>
+            <position>0</position>
+            <sys_created_by>mark.cheek@xalient.com</sys_created_by>
+            <sys_created_on>2026-01-27 15:23:23</sys_created_on>
+            <sys_id>f36b01041b323e5444165391604bcb94</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_xal_idconnect_approval_rule" sys_domain="global" view="Default view">bf6b01041b323e5444165391604bcb7b</sys_ui_section>
+            <sys_updated_by>mark.cheek@xalient.com</sys_updated_by>
+            <sys_updated_on>2026-01-27 15:23:23</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>script</element>
+            <position>1</position>
+            <sys_created_by>mark.cheek@xalient.com</sys_created_by>
+            <sys_created_on>2026-01-27 15:23:23</sys_created_on>
+            <sys_id>ff6b01041b323e5444165391604bcb95</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_xal_idconnect_approval_rule" sys_domain="global" view="Default view">bf6b01041b323e5444165391604bcb7b</sys_ui_section>
+            <sys_updated_by>mark.cheek@xalient.com</sys_updated_by>
+            <sys_updated_on>2026-01-27 15:23:23</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_section action="INSERT_OR_UPDATE">
+            <caption/>
+            <header>false</header>
+            <name>x_xal_idconnect_approval_rule</name>
+            <roles/>
+            <sys_class_name>sys_ui_section</sys_class_name>
+            <sys_created_by>mark.cheek@xalient.com</sys_created_by>
+            <sys_created_on>2026-01-27 15:23:23</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>bf6b01041b323e5444165391604bcb7b</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>x_xal_idconnect_approval_rule</sys_name>
+            <sys_overrides/>
+            <sys_package display_value="Xalient Identity Connect" source="x_xal_idconnect">14a34acb93556210a06d7b018bba10ef</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Xalient Identity Connect">14a34acb93556210a06d7b018bba10ef</sys_scope>
+            <sys_update_name>sys_ui_section_bf6b01041b323e5444165391604bcb7b</sys_update_name>
+            <sys_updated_by>mark.cheek@xalient.com</sys_updated_by>
+            <sys_updated_on>2026-01-27 15:23:23</sys_updated_on>
+            <sys_user/>
+            <title>true</title>
+            <view display_value="Default view" name="NULL">Default view</view>
+            <view_name/>
+        </sys_ui_section>
+    </sys_ui_section>
+</record_update>

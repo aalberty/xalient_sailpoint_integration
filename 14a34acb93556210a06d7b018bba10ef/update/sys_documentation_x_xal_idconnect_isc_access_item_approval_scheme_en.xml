@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_documentation element="approval_scheme" label="Approval Scheme" language="en" table="x_xal_idconnect_isc_access_item">
+        <sys_documentation action="INSERT_OR_UPDATE">
+            <element>approval_scheme</element>
+            <help/>
+            <hint/>
+            <label>Approval Scheme</label>
+            <language>en</language>
+            <name>x_xal_idconnect_isc_access_item</name>
+            <plural>Approval Schemes</plural>
+            <sys_class_name>sys_documentation</sys_class_name>
+            <sys_created_by>mark.cheek@xalient.com</sys_created_by>
+            <sys_created_on>2025-06-10 12:55:33</sys_created_on>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>Approval Scheme</sys_name>
+            <sys_package display_value="Xalient Identity Connect" source="x_xal_idconnect">14a34acb93556210a06d7b018bba10ef</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Xalient Identity Connect">14a34acb93556210a06d7b018bba10ef</sys_scope>
+            <sys_update_name>sys_documentation_x_xal_idconnect_isc_access_item_approval_scheme_en</sys_update_name>
+            <sys_updated_by>mark.cheek@xalient.com</sys_updated_by>
+            <sys_updated_on>2025-06-10 12:55:33</sys_updated_on>
+            <url/>
+            <url_target/>
+        </sys_documentation>
+    </sys_documentation>
+</record_update>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="catalog_ui_policy_action">
+    <catalog_ui_policy_action action="INSERT_OR_UPDATE">
+        <catalog_item display_value="Access Item Ownership Change">cf4d5ba093e16a10a06d7b018bba10a7</catalog_item>
+        <catalog_variable>IO:e1d940f893a56a10a06d7b018bba10d4</catalog_variable>
+        <cleared>false</cleared>
+        <disabled>ignore</disabled>
+        <field/>
+        <field_message/>
+        <field_message_type>none</field_message_type>
+        <mandatory>ignore</mandatory>
+        <order>100</order>
+        <sys_class_name>catalog_ui_policy_action</sys_class_name>
+        <sys_created_by>mark.cheek</sys_created_by>
+        <sys_created_on>2025-05-13 19:05:23</sys_created_on>
+        <sys_id>a27a0cf893a56a10a06d7b018bba1036</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>lbl__new_owner_info</sys_name>
+        <sys_package display_value="Xalient Identity Connect" source="x_xal_idconnect">14a34acb93556210a06d7b018bba10ef</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Xalient Identity Connect">14a34acb93556210a06d7b018bba10ef</sys_scope>
+        <sys_update_name>catalog_ui_policy_action_a27a0cf893a56a10a06d7b018bba1036</sys_update_name>
+        <sys_updated_by>mark.cheek</sys_updated_by>
+        <sys_updated_on>2025-05-13 19:05:23</sys_updated_on>
+        <table/>
+        <ui_policy display_value="Show new owner picker">543a4cf893a56a10a06d7b018bba1021</ui_policy>
+        <value/>
+        <value_action>ignore</value_action>
+        <variable>lbl__new_owner_info</variable>
+        <variable_set/>
+        <visible>true</visible>
+    </catalog_ui_policy_action>
+</record_update>

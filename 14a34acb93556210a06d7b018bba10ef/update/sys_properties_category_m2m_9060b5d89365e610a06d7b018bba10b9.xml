@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_properties_category_m2m">
+    <sys_properties_category_m2m action="INSERT_OR_UPDATE">
+        <category display_value="Xalient ISC Configuration">9664220793196210a06d7b018bba10bb</category>
+        <order>600</order>
+        <property display_value="x_xal_idconnect.sc_task_assignment_group" name="x_xal_idconnect.sc_task_assignment_group">2e50711c9365e610a06d7b018bba1074</property>
+        <sys_class_name>sys_properties_category_m2m</sys_class_name>
+        <sys_created_by>mark.cheek</sys_created_by>
+        <sys_created_on>2025-05-12 13:13:38</sys_created_on>
+        <sys_id>9060b5d89365e610a06d7b018bba10b9</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>x_xal_idconnect.sc_task_assignment_group.Xalient ISC Configuration</sys_name>
+        <sys_package display_value="Xalient Identity Connect" source="x_xal_idconnect">14a34acb93556210a06d7b018bba10ef</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Xalient Identity Connect">14a34acb93556210a06d7b018bba10ef</sys_scope>
+        <sys_update_name>sys_properties_category_m2m_9060b5d89365e610a06d7b018bba10b9</sys_update_name>
+        <sys_updated_by>mark.cheek</sys_updated_by>
+        <sys_updated_on>2025-05-12 13:16:00</sys_updated_on>
+    </sys_properties_category_m2m>
+</record_update>

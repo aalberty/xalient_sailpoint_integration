@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element audit="true" db_object_id="4404a783935d6210a06d7b018bba1099" label="ISC Access Items" max_length="40" name="x_xal_idconnect_isc_access_item" type="collection">
+        <element attributes="edge_encryption_enabled=true,encode_utf8=false" label="Owner" max_length="32" name="owner" reference="sys_user" type="reference"/>
+        <element attributes="edge_encryption_enabled=true" choice="3" label="SailPoint Object Type" max_length="40" name="sailpoint_object_type" read_only="true" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Access Profile" sequence="1" value="accessprofile"/>
+                <element inactive_on_update="false" label="Role" sequence="0" value="role"/>
+                <element inactive_on_update="false" label="Entitlement" sequence="2" value="entitlement"/>
+            </choice>
+        </element>
+        <element label="SailPoint Source Name" max_length="255" name="sailpoint_source_name" read_only="true" type="string"/>
+        <element display="true" label="Name" max_length="255" name="name" read_only="true" type="string"/>
+        <element label="Description" max_length="1000" name="description" read_only="true" type="string"/>
+        <element label="SailPoint Entitlement Value" max_length="255" name="sailpoint_entitlement_value" read_only="true" type="string"/>
+        <element attributes="edge_encryption_enabled=true,encode_utf8=false" label="Business Application" max_length="32" name="business_application" reference="cmdb_ci_business_app" type="reference"/>
+        <element label="SailPoint Source Id" max_length="255" name="sailpoint_source_id" read_only="true" type="string"/>
+        <element label="SailPoint Source Entitlement Subtype" max_length="255" name="sailpoint_source_entitlement_subtype" read_only="true" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Privileged" max_length="40" name="privileged" read_only="true" type="boolean"/>
+        <element attributes="edge_encryption_enabled=true" label="Use in Catalog Items" max_length="40" name="use_in_catalog_items" type="boolean"/>
+        <element attributes="edge_encryption_enabled=true" label="Active" max_length="40" name="active" type="boolean"/>
+        <element label="SailPoint Source Entitlement Type" max_length="255" name="sailpoint_source_entitlement_type" read_only="true" type="string"/>
+        <element label="SailPoint Id" max_length="255" name="sailpoint_id" read_only="true" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Requestable" max_length="40" name="requestable" read_only="true" type="boolean"/>
+        <element attributes="edge_encryption_enabled=true" choice="1" label="Approval Scheme" max_length="40" name="approval_scheme" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Access Item Owner Only" sequence="200" value="access_item_owner_only"/>
+                <element inactive_on_update="false" label="Manager then Access Item Owner" sequence="300" value="manager_then_access_item_owner"/>
+                <element inactive_on_update="false" label="No Approval Required" sequence="400" value="no_approval_required"/>
+                <element inactive_on_update="false" label="Manager Only" sequence="100" value="manager_only"/>
+            </choice>
+        </element>
+        <index name="index">
+            <element name="business_application"/>
+        </index>
+        <index name="index2">
+            <element name="owner"/>
+        </index>
+        <index name="index3">
+            <element name="sailpoint_id"/>
+        </index>
+    </element>
+</database>

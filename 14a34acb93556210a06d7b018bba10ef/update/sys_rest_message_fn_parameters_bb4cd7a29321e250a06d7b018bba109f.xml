@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_rest_message_fn_parameters">
+    <sys_rest_message_fn_parameters action="INSERT_OR_UPDATE">
+        <name>identity_id</name>
+        <rest_message_function display_value="accessprofile-patch">6e2cdfee93eda250a06d7b018bba103b</rest_message_function>
+        <sys_class_name>sys_rest_message_fn_parameters</sys_class_name>
+        <sys_created_by>mark.cheek</sys_created_by>
+        <sys_created_on>2025-05-19 20:51:31</sys_created_on>
+        <sys_id>bb4cd7a29321e250a06d7b018bba109f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>identity_id</sys_name>
+        <sys_package display_value="Xalient Identity Connect" source="x_xal_idconnect">14a34acb93556210a06d7b018bba10ef</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Xalient Identity Connect">14a34acb93556210a06d7b018bba10ef</sys_scope>
+        <sys_update_name>sys_rest_message_fn_parameters_bb4cd7a29321e250a06d7b018bba109f</sys_update_name>
+        <sys_updated_by>mark.cheek</sys_updated_by>
+        <sys_updated_on>2025-05-19 20:51:31</sys_updated_on>
+        <type>string</type>
+        <value/>
+    </sys_rest_message_fn_parameters>
+</record_update>

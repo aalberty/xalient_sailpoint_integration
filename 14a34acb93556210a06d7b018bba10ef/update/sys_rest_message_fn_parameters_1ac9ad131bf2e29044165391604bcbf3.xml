@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_rest_message_fn_parameters">
+    <sys_rest_message_fn_parameters action="INSERT_OR_UPDATE">
+        <name>client_secret</name>
+        <rest_message_function display_value="authentication-access-token">563395ab93e12210a06d7b018bba10c1</rest_message_function>
+        <sys_class_name>sys_rest_message_fn_parameters</sys_class_name>
+        <sys_created_by>mark.cheek@xalient.com</sys_created_by>
+        <sys_created_on>2025-07-22 23:45:05</sys_created_on>
+        <sys_id>1ac9ad131bf2e29044165391604bcbf3</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>client_secret</sys_name>
+        <sys_package display_value="Xalient Identity Connect" source="x_xal_idconnect">14a34acb93556210a06d7b018bba10ef</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Xalient Identity Connect">14a34acb93556210a06d7b018bba10ef</sys_scope>
+        <sys_update_name>sys_rest_message_fn_parameters_1ac9ad131bf2e29044165391604bcbf3</sys_update_name>
+        <sys_updated_by>mark.cheek@xalient.com</sys_updated_by>
+        <sys_updated_on>2025-07-22 23:45:05</sys_updated_on>
+        <type>string</type>
+        <value/>
+    </sys_rest_message_fn_parameters>
+</record_update>

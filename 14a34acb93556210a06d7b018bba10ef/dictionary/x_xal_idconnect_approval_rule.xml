@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element db_object_id="3b5a45001b323e5444165391604bcbca" label="Approval Rule" max_length="40" name="x_xal_idconnect_approval_rule" type="collection">
+        <element display="true" label="Name" max_length="255" name="name" type="string"/>
+        <element label="Script" max_length="8000" name="script" type="script"/>
+    </element>
+</database>

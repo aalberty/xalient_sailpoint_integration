@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_ui_form_sections form_id="c1f214ae476f6210886667e4f16d4387" sys_domain="global" table="sys_hub_action_output" version="3">
+        <sys_ui_form_section action="INSERT_OR_UPDATE">
+            <position>0</position>
+            <sys_created_by>MCheek</sys_created_by>
+            <sys_created_on>2025-08-26 16:17:22</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>c5f214ae476f6210886667e4f16d43a4</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_overrides/>
+            <sys_ui_form display_value="sys_hub_action_output" name="sys_hub_action_output" sys_domain="global" view="7966be310a0a0b8c00bd504090503227">c1f214ae476f6210886667e4f16d4387</sys_ui_form>
+            <sys_ui_section display_value="">8df214ae476f6210886667e4f16d4398</sys_ui_section>
+            <sys_updated_by>MCheek</sys_updated_by>
+            <sys_updated_on>2025-08-26 16:17:22</sys_updated_on>
+        </sys_ui_form_section>
+        <sys_ui_form_section action="INSERT_OR_UPDATE">
+            <position>1</position>
+            <sys_created_by>MCheek</sys_created_by>
+            <sys_created_on>2025-08-26 16:17:22</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>09f214ae476f6210886667e4f16d43ae</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_overrides/>
+            <sys_ui_form display_value="sys_hub_action_output" name="sys_hub_action_output" sys_domain="global" view="7966be310a0a0b8c00bd504090503227">c1f214ae476f6210886667e4f16d4387</sys_ui_form>
+            <sys_ui_section display_value="">c9f214ae476f6210886667e4f16d43a4</sys_ui_section>
+            <sys_updated_by>MCheek</sys_updated_by>
+            <sys_updated_on>2025-08-26 16:17:22</sys_updated_on>
+        </sys_ui_form_section>
+        <sys_ui_form_section action="INSERT_OR_UPDATE">
+            <position>2</position>
+            <sys_created_by>MCheek</sys_created_by>
+            <sys_created_on>2025-08-26 16:17:22</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>c9f214ae476f6210886667e4f16d438e</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_overrides/>
+            <sys_ui_form display_value="sys_hub_action_output" name="sys_hub_action_output" sys_domain="global" view="7966be310a0a0b8c00bd504090503227">c1f214ae476f6210886667e4f16d4387</sys_ui_form>
+            <sys_ui_section display_value="">c9f214ae476f6210886667e4f16d4389</sys_ui_section>
+            <sys_updated_by>MCheek</sys_updated_by>
+            <sys_updated_on>2025-08-26 16:17:22</sys_updated_on>
+        </sys_ui_form_section>
+        <sys_ui_form_section action="INSERT_OR_UPDATE">
+            <position>3</position>
+            <sys_created_by>MCheek</sys_created_by>
+            <sys_created_on>2025-08-26 16:17:22</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>8df214ae476f6210886667e4f16d4393</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_overrides/>
+            <sys_ui_form display_value="sys_hub_action_output" name="sys_hub_action_output" sys_domain="global" view="7966be310a0a0b8c00bd504090503227">c1f214ae476f6210886667e4f16d4387</sys_ui_form>
+            <sys_ui_section display_value="">cdf214ae476f6210886667e4f16d438e</sys_ui_section>
+            <sys_updated_by>MCheek</sys_updated_by>
+            <sys_updated_on>2025-08-26 16:17:22</sys_updated_on>
+        </sys_ui_form_section>
+        <sys_ui_form_section action="INSERT_OR_UPDATE">
+            <position>4</position>
+            <sys_created_by>MCheek</sys_created_by>
+            <sys_created_on>2025-08-26 16:17:22</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>89f214ae476f6210886667e4f16d4398</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_overrides/>
+            <sys_ui_form display_value="sys_hub_action_output" name="sys_hub_action_output" sys_domain="global" view="7966be310a0a0b8c00bd504090503227">c1f214ae476f6210886667e4f16d4387</sys_ui_form>
+            <sys_ui_section display_value="">81f214ae476f6210886667e4f16d4394</sys_ui_section>
+            <sys_updated_by>MCheek</sys_updated_by>
+            <sys_updated_on>2025-08-26 16:17:22</sys_updated_on>
+        </sys_ui_form_section>
+        <sys_ui_form_section action="INSERT_OR_UPDATE">
+            <position>5</position>
+            <sys_created_by>MCheek</sys_created_by>
+            <sys_created_on>2025-08-26 16:17:22</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>89f214ae476f6210886667e4f16d43b3</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_overrides/>
+            <sys_ui_form display_value="sys_hub_action_output" name="sys_hub_action_output" sys_domain="global" view="7966be310a0a0b8c00bd504090503227">c1f214ae476f6210886667e4f16d4387</sys_ui_form>
+            <sys_ui_section display_value="">0df214ae476f6210886667e4f16d43ae</sys_ui_section>
+            <sys_updated_by>MCheek</sys_updated_by>
+            <sys_updated_on>2025-08-26 16:17:22</sys_updated_on>
+        </sys_ui_form_section>
+        <sys_ui_form action="INSERT_OR_UPDATE">
+            <name>sys_hub_action_output</name>
+            <roles/>
+            <sys_class_name>sys_ui_form</sys_class_name>
+            <sys_created_by>MCheek</sys_created_by>
+            <sys_created_on>2025-08-26 16:17:21</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>c1f214ae476f6210886667e4f16d4387</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>sys_hub_action_output</sys_name>
+            <sys_overrides/>
+            <sys_package display_value="Xalient Identity Connect" source="x_xal_idconnect">14a34acb93556210a06d7b018bba10ef</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Xalient Identity Connect">14a34acb93556210a06d7b018bba10ef</sys_scope>
+            <sys_update_name>sys_ui_form_sections_c1f214ae476f6210886667e4f16d4387</sys_update_name>
+            <sys_updated_by>MCheek</sys_updated_by>
+            <sys_updated_on>2025-08-26 16:17:21</sys_updated_on>
+            <sys_user/>
+            <view display_value="Advanced" name="advanced">7966be310a0a0b8c00bd504090503227</view>
+            <view_name/>
+        </sys_ui_form>
+    </sys_ui_form_sections>
+</record_update>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_user_role_contains">
+    <sys_user_role_contains action="INSERT_OR_UPDATE">
+        <contains display_value="x_xal_idconnect.approval_rule_user" name="x_xal_idconnect.approval_rule_user">db9acd001b323e5444165391604bcb15</contains>
+        <role display_value="x_xal_idconnect.admin" name="x_xal_idconnect.admin">90a38acb93556210a06d7b018bba1005</role>
+        <sys_class_name>sys_user_role_contains</sys_class_name>
+        <sys_created_by>mark.cheek@xalient.com</sys_created_by>
+        <sys_created_on>2026-01-27 15:22:53</sys_created_on>
+        <sys_id>185bc5c01b323e5444165391604bcbfb</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_xal_idconnect.approval_rule_user.x_xal_idconnect.admin</sys_name>
+        <sys_package display_value="Xalient Identity Connect" source="x_xal_idconnect">14a34acb93556210a06d7b018bba10ef</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Xalient Identity Connect">14a34acb93556210a06d7b018bba10ef</sys_scope>
+        <sys_update_name>sys_user_role_contains_185bc5c01b323e5444165391604bcbfb</sys_update_name>
+        <sys_updated_by>mark.cheek@xalient.com</sys_updated_by>
+        <sys_updated_on>2026-01-27 15:22:53</sys_updated_on>
+    </sys_user_role_contains>
+</record_update>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_embedded_help_role">
+    <sys_embedded_help_role action="INSERT_OR_UPDATE">
+        <order>1000</order>
+        <role display_value="x_xal_idconnect.user" name="x_xal_idconnect.user">14a38acb93556210a06d7b018bba100a</role>
+        <sys_class_name>sys_embedded_help_role</sys_class_name>
+        <sys_created_by>mark.cheek</sys_created_by>
+        <sys_created_on>2025-05-08 17:25:21</sys_created_on>
+        <sys_id>10a38acb93556210a06d7b018bba1018</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>14a38acb93556210a06d7b018bba100a</sys_name>
+        <sys_package display_value="Xalient Identity Connect" source="x_xal_idconnect">14a34acb93556210a06d7b018bba10ef</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Xalient Identity Connect">14a34acb93556210a06d7b018bba10ef</sys_scope>
+        <sys_update_name>sys_embedded_help_role_10a38acb93556210a06d7b018bba1018</sys_update_name>
+        <sys_updated_by>mark.cheek</sys_updated_by>
+        <sys_updated_on>2025-05-08 17:25:21</sys_updated_on>
+    </sys_embedded_help_role>
+</record_update>

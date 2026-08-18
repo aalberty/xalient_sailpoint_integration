@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script_include">
+    <sys_script_include action="INSERT_OR_UPDATE">
+        <access>package_private</access>
+        <active>true</active>
+        <api_name>x_xal_idconnect.XalientAccessItemSync</api_name>
+        <caller_access/>
+        <client_callable>false</client_callable>
+        <description/>
+        <mobile_callable>false</mobile_callable>
+        <name>XalientAccessItemSync</name>
+        <sandbox_callable>false</sandbox_callable>
+        <script><![CDATA[var XalientAccessItemSync = Class.create();
+XalientAccessItemSync.prototype = Object.extendsObject(x_xal_idconnect.XalientUtilitiesCore, {
+	initialize: function () {
+	},
+
+	inboundSync: function () {
+		//Grabs all access items in SailPoint and upserts them against the access item table
+		const access_token = this.getToken();
+		const access_item_filter = gs.getProperty('x_xal_idconnect.inbound_sync_filter') || '*';
+
+		const rm_req_body = {
+			"indices": [
+				"roles",
+				"accessprofiles",
+				"entitlements"
+			],
+			"query": {
+				"query": access_item_filter
+			},
+			"sort": [
+				"id"
+			]
+		};
+
+		const access_items = this.getPaginatedSearchResults(rm_req_body);
+
+		for (const item of access_items) {
+			const gr_access_item = new GlideRecord('x_xal_idconnect_sailpoint_access_item_staging');
+			gr_access_item.initialize();
+
+			//Common attributes
+			gr_access_item.u_name = item?.name;
+			gr_access_item.u_description = item?.description;
+			gr_access_item.u_requestable = item.requestable;
+			gr_access_item.u_sailpoint_id = item.id;
+			gr_access_item.u_active = true;
+			gr_access_item.u_sailpoint_object_type = item.type;
+
+			//Access Item Ownership
+			gr_access_item.u_owner = this.getSnUserAttribute('email',item.owner?.email,'sys_id');
+
+			//Access Profile and Entitlement-specific attributes
+			gr_access_item.u_sailpoint_source_name = item.source?.name;
+			gr_access_item.u_sailpoint_source_id = item.source?.id;
+			gr_access_item.u_sailpoint_entitlement_value = item?.value;
+			gr_access_item.u_sailpoint_so_titlement_type = item?.sourceSchemaObjectType;
+			gr_access_item.u_privileged = item?.privileged;
+
+			gr_access_item.insert();
+		}
+	},
+
+	outboundReconciliation: function () {
+		//Checks and sees if access items on the ServiceNow side still exist on the SailPoint tenant and inactivates them if not
+	},
+	type: 'XalientAccessItemSync'
+});]]></script>
+        <sys_class_name>sys_script_include</sys_class_name>
+        <sys_created_by>mark.cheek</sys_created_by>
+        <sys_created_on>2025-05-09 17:23:33</sys_created_on>
+        <sys_id>de6b431f939da210a06d7b018bba1004</sys_id>
+        <sys_mod_count>39</sys_mod_count>
+        <sys_name>XalientAccessItemSync</sys_name>
+        <sys_package display_value="Xalient Identity Connect" source="x_xal_idconnect">14a34acb93556210a06d7b018bba10ef</sys_package>
+        <sys_policy>read</sys_policy>
+        <sys_scope display_value="Xalient Identity Connect">14a34acb93556210a06d7b018bba10ef</sys_scope>
+        <sys_update_name>sys_script_include_de6b431f939da210a06d7b018bba1004</sys_update_name>
+        <sys_updated_by>mark.cheek</sys_updated_by>
+        <sys_updated_on>2025-05-13 20:20:30</sys_updated_on>
+    </sys_script_include>
+    <sys_es_latest_script action="INSERT_OR_UPDATE">
+        <id>de6b431f939da210a06d7b018bba1004</id>
+        <sys_created_by>mark.cheek@xalient.com</sys_created_by>
+        <sys_created_on>2025-06-04 01:36:27</sys_created_on>
+        <sys_id>275d25671b39221444165391604bcbb1</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>mark.cheek@xalient.com</sys_updated_by>
+        <sys_updated_on>2025-06-04 01:36:27</sys_updated_on>
+        <table>sys_script_include</table>
+        <use_es_latest>true</use_es_latest>
+    </sys_es_latest_script>
+</record_update>

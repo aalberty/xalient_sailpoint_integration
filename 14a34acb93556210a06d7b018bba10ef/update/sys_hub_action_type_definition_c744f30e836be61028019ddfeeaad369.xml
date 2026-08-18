@@ -1,0 +1,2207 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_hub_action_type_definition">
+    <sys_hub_action_type_definition action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <acls/>
+        <action_status/>
+        <action_template/>
+        <active>true</active>
+        <annotation/>
+        <attributes>{labelCacheCleanUpExecuted=true}</attributes>
+        <authored_on_release_version>27000</authored_on_release_version>
+        <callable_by_client_api>false</callable_by_client_api>
+        <category/>
+        <copied_from/>
+        <copied_from_name/>
+        <description/>
+        <flow_priority/>
+        <ih_action>false</ih_action>
+        <internal_name>get_isc_access_request_status</internal_name>
+        <label_cache>[{"name":"{{action.access_request_ids}}","label":"action➛Access Request Ids","type":"action","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[e037cb75-d231-4bae-82e7-6f9584738985].status}}","label":"step➛Script step➛Status","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"sourceId":"","sourceUiUniqueId":"","sourceType":""}},{"name":"{{step[e037cb75-d231-4bae-82e7-6f9584738985].result}}","label":"step➛Script step➛Result","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"sourceId":"","sourceUiUniqueId":"","sourceType":""}},{"name":"{{step[e037cb75-d231-4bae-82e7-6f9584738985].error_message}}","label":"step➛Script step➛Error Message","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"sourceId":"","sourceUiUniqueId":"","sourceType":""}}]</label_cache>
+        <master_snapshot>f999778683abe61028019ddfeeaad33b</master_snapshot>
+        <master_snapshot_digest/>
+        <name>Get ISC Access Request Status</name>
+        <natlang/>
+        <outputs/>
+        <outputs/>
+        <pre_compiled>false</pre_compiled>
+        <state>published</state>
+        <sys_class_name>sys_hub_action_type_definition</sys_class_name>
+        <sys_created_by>MCheek</sys_created_by>
+        <sys_created_on>2025-08-25 19:24:56</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>c744f30e836be61028019ddfeeaad369</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Get ISC Access Request Status</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Xalient Identity Connect" source="x_xal_idconnect">14a34acb93556210a06d7b018bba10ef</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Xalient Identity Connect">14a34acb93556210a06d7b018bba10ef</sys_scope>
+        <sys_update_name>sys_hub_action_type_definition_c744f30e836be61028019ddfeeaad369</sys_update_name>
+        <sys_updated_by>mark.cheek@xalient.com</sys_updated_by>
+        <sys_updated_on>2026-01-05 15:28:17</sys_updated_on>
+        <system_level>false</system_level>
+        <type/>
+    </sys_hub_action_type_definition>
+    <sys_translated_text action="delete_multiple" query="documentkey=c744f30e836be61028019ddfeeaad369"/>
+    <sys_variable_value action="delete_multiple" query="document_key=c744f30e836be61028019ddfeeaad369"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_type_definition</document>
+        <document_key>c744f30e836be61028019ddfeeaad369</document_key>
+        <order>1</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>MCheek</sys_created_by>
+        <sys_created_on>2025-08-25 19:48:01</sys_created_on>
+        <sys_id>0599378683abe61028019ddfeeaad3c8</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>MCheek</sys_updated_by>
+        <sys_updated_on>2025-08-26 14:46:53</sys_updated_on>
+        <value>{"version":"1.0","complexObjectSchema":{"FlowDesigner:FDACTIONSTATUS":{"code":"Integer","code.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"Integer\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"integer\",\"mapped\":\"{}\",\"default_value\":\"\",\"label\":\"Code\",\"action_error_output\":\"true\",\"mandatory\":\"false\",\"order\":\"1\",\"max_length\":\"40\"}"},"message":"String","message.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"mapped\":\"{}\",\"default_value\":\"\",\"label\":\"Message\",\"action_error_output\":\"true\",\"mandatory\":\"false\",\"order\":\"2\",\"max_length\":\"4000\"}"}},"FlowDesigner:FDACTIONSTATUS.$type_facets":{"SimpleMapFacet":"{\"sourceId\":\"\",\"default_value\":\"\",\"label\":\"Action Status\",\"action_error_output\":\"true\",\"mandatory\":\"false\",\"uiUniqueId\":\"e660271a-e664-4e7b-b78a-1a5ed436cc2d\",\"uiTypeLabel\":\"Object\",\"co_type_name\":\"FDACTIONSTATUS\",\"element_mapping_provider\":\"com.glide.flow_design.action.data.FlowDesignVariableMapper\",\"read_only\":\"false\",\"sourceUiUniqueId\":\"\",\"sourceType\":\"\",\"hint\":null,\"uiType\":\"object\",\"order\":\"2\",\"max_length\":\"65000\"}"}},"serializationFormat":"JSON","complexObject":{"code":{"$cv":{"$c":"java.lang.String","$v":""}},"message":{"$cv":{"$c":"java.lang.String","$v":""}}}}</value>
+        <variable display_value="Action Status">4d99378683abe61028019ddfeeaad3b5</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_type_definition</document>
+        <document_key>c744f30e836be61028019ddfeeaad369</document_key>
+        <order>3</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>MCheek</sys_created_by>
+        <sys_created_on>2025-08-25 19:48:01</sys_created_on>
+        <sys_id>4199378683abe61028019ddfeeaad3c8</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>MCheek</sys_updated_by>
+        <sys_updated_on>2025-08-25 19:48:01</sys_updated_on>
+        <value>0</value>
+        <variable display_value="Don't Treat as Error">4199378683abe61028019ddfeeaad3be</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=c744f30e836be61028019ddfeeaad369"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>status</field>
+        <id>c744f30e836be61028019ddfeeaad369</id>
+        <sys_created_by>MCheek</sys_created_by>
+        <sys_created_on>2025-08-25 19:48:01</sys_created_on>
+        <sys_id>cd99378683abe61028019ddfeeaad3c7</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>MCheek</sys_updated_by>
+        <sys_updated_on>2025-08-25 19:48:01</sys_updated_on>
+        <table>var__m_sys_hub_action_output_c744f30e836be61028019ddfeeaad369</table>
+        <value>{{step[e037cb75-d231-4bae-82e7-6f9584738985].status}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>__action_status__</field>
+        <id>c744f30e836be61028019ddfeeaad369</id>
+        <sys_created_by>MCheek</sys_created_by>
+        <sys_created_on>2025-08-25 19:48:01</sys_created_on>
+        <sys_id>0d99378683abe61028019ddfeeaad3c7</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>MCheek</sys_updated_by>
+        <sys_updated_on>2025-08-25 19:48:01</sys_updated_on>
+        <table>var__m_sys_hub_action_output_c744f30e836be61028019ddfeeaad369</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>__dont_treat_as_error__</field>
+        <id>c744f30e836be61028019ddfeeaad369</id>
+        <sys_created_by>MCheek</sys_created_by>
+        <sys_created_on>2025-08-25 19:48:01</sys_created_on>
+        <sys_id>4999378683abe61028019ddfeeaad3c7</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>MCheek</sys_updated_by>
+        <sys_updated_on>2025-08-25 19:48:01</sys_updated_on>
+        <table>var__m_sys_hub_action_output_c744f30e836be61028019ddfeeaad369</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_step_instance action="delete_multiple" query="action=c744f30e836be61028019ddfeeaad369^sys_idNOT IN3899378683abe61028019ddfeeaad386"/>
+    <sys_hub_step_instance action="INSERT_OR_UPDATE">
+        <action display_value="Get ISC Access Request Status">c744f30e836be61028019ddfeeaad369</action>
+        <cid>e037cb75-d231-4bae-82e7-6f9584738985</cid>
+        <error_handling_type>1</error_handling_type>
+        <extended_inputs/>
+        <extended_inputs/>
+        <extended_outputs/>
+        <icon/>
+        <inputs/>
+        <label>Script step</label>
+        <order>1</order>
+        <outputs/>
+        <section/>
+        <step_type display_value="Script">106afb6647032200b4fad7527c9a71e7</step_type>
+        <sys_created_by>MCheek</sys_created_by>
+        <sys_created_on>2025-08-25 19:48:00</sys_created_on>
+        <sys_id>3899378683abe61028019ddfeeaad386</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_scope display_value="Xalient Identity Connect">14a34acb93556210a06d7b018bba10ef</sys_scope>
+        <sys_updated_by>MCheek</sys_updated_by>
+        <sys_updated_on>2025-08-26 15:01:09</sys_updated_on>
+    </sys_hub_step_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=3899378683abe61028019ddfeeaad386"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>3899378683abe61028019ddfeeaad386</document_key>
+        <order>600</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>MCheek</sys_created_by>
+        <sys_created_on>2025-08-25 19:48:00</sys_created_on>
+        <sys_id>8199378683abe61028019ddfeeaad3b2</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_updated_by>MCheek</sys_updated_by>
+        <sys_updated_on>2025-08-26 15:01:09</sys_updated_on>
+        <value>(function execute(inputs, outputs) {&#13;
+    const res_request_status = new x_xal_idconnect.XalientUtilitiesCatalogItem().getAccessRequestStatus(inputs.access_request_ids.toString());&#13;
+&#13;
+    try {&#13;
+        if (res_request_status.getStatusCode() == 200) {&#13;
+            const resb_request_status = JSON.parse(res_request_status.getBody());&#13;
+            outputs.status = evaluateStates(resb_request_status);&#13;
+        } else {&#13;
+            throw `Error retrieving request status -\r\n\r\n&#13;
+				Status Code - ${res_request_status.getStatusCode()}\r\n&#13;
+				Server Response - \r\n\r\n ${res_request_status.getBody()}`;&#13;
+        }&#13;
+    } catch (exception) {&#13;
+        output.error_message = exception;&#13;
+        output.result = 'processing_exception';&#13;
+    }&#13;
+&#13;
+    function evaluateStates(response) {&#13;
+        const failureStates = new Set([&#13;
+            "CANCELLED",&#13;
+            "TERMINATED",&#13;
+            "REJECTED",&#13;
+            "PROVISIONING_FAILED",&#13;
+            "NOT_ALL_ITEMS_PROVISIONED",&#13;
+            "ERROR"&#13;
+        ]);&#13;
+&#13;
+        let allCompleted = true;&#13;
+&#13;
+        for (const item of response) {&#13;
+            const state = item.state;&#13;
+&#13;
+            if (failureStates.has(state)) {&#13;
+                return "failure";&#13;
+            }&#13;
+&#13;
+            if (state !== "REQUEST_COMPLETED") {&#13;
+                allCompleted = false;&#13;
+            }&#13;
+        }&#13;
+&#13;
+        return allCompleted ? "completed" : "in_progress";&#13;
+    }&#13;
+})(inputs, outputs);&#13;
+&#13;
+</value>
+        <variable display_value="Script">71aa7f6647032200b4fad7527c9a719b</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>3899378683abe61028019ddfeeaad386</document_key>
+        <order>400</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>MCheek</sys_created_by>
+        <sys_created_on>2025-08-25 19:48:00</sys_created_on>
+        <sys_id>cd99378683abe61028019ddfeeaad3b1</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>MCheek</sys_updated_by>
+        <sys_updated_on>2025-08-25 19:48:00</sys_updated_on>
+        <value>35aa573fd7802200bdbaee5b5e610375</value>
+        <variable display_value="MID Application">f5e56d79b3101300176b051a16a8dce4</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=3899378683abe61028019ddfeeaad386"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>access_request_ids</field>
+        <id>3899378683abe61028019ddfeeaad386</id>
+        <sys_created_by>MCheek</sys_created_by>
+        <sys_created_on>2025-08-25 19:48:00</sys_created_on>
+        <sys_id>c999378683abe61028019ddfeeaad3b2</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>MCheek</sys_updated_by>
+        <sys_updated_on>2025-08-25 19:48:00</sys_updated_on>
+        <table>var__m_sys_hub_step_ext_input_3899378683abe61028019ddfeeaad386</table>
+        <value>{{action.access_request_ids}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_step_ext_output_3899378683abe61028019ddfeeaad386^id=3899378683abe61028019ddfeeaad386"/>
+    <sys_element_mapping action="delete_multiple" query="table=var__m_sys_flow_step_definition_input_106afb6647032200b4fad7527c9a71e7^id=3899378683abe61028019ddfeeaad386"/>
+    <sys_hub_step_ext_input action="delete_multiple" query="model=3899378683abe61028019ddfeeaad386^sys_idNOT IN7499378683abe61028019ddfeeaad398"/>
+    <sys_hub_step_ext_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>access_request_ids</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label/>
+        <mandatory>true</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="Script step">3899378683abe61028019ddfeeaad386</model>
+        <model_id>3899378683abe61028019ddfeeaad386</model_id>
+        <model_table>sys_hub_step_instance</model_table>
+        <name>var__m_sys_hub_step_ext_input_3899378683abe61028019ddfeeaad386</name>
+        <next_element/>
+        <order>0</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_step_ext_input</sys_class_name>
+        <sys_created_by>MCheek</sys_created_by>
+        <sys_created_on>2025-08-25 19:48:00</sys_created_on>
+        <sys_id>7499378683abe61028019ddfeeaad398</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Xalient Identity Connect">14a34acb93556210a06d7b018bba10ef</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>MCheek</sys_updated_by>
+        <sys_updated_on>2025-08-25 19:48:00</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_step_ext_input>
+    <sys_hub_step_ext_output action="delete_multiple" query="model=3899378683abe61028019ddfeeaad386^sys_idNOT IN4999378683abe61028019ddfeeaad39b,f33e375683636a1028019ddfeeaad388,ff3e375683636a1028019ddfeeaad384"/>
+    <sys_hub_step_ext_output action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String,uiUniqueId=7c667de2-2fe2-480d-9356-2ebf5767b075</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>status</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>Status</label>
+        <mandatory>false</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="Script step">3899378683abe61028019ddfeeaad386</model>
+        <model_id>3899378683abe61028019ddfeeaad386</model_id>
+        <model_table>sys_hub_step_instance</model_table>
+        <name>var__m_sys_hub_step_ext_output_3899378683abe61028019ddfeeaad386</name>
+        <next_element/>
+        <order>1</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_step_ext_output</sys_class_name>
+        <sys_created_by>MCheek</sys_created_by>
+        <sys_created_on>2025-08-25 19:48:00</sys_created_on>
+        <sys_id>4999378683abe61028019ddfeeaad39b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Xalient Identity Connect">14a34acb93556210a06d7b018bba10ef</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>MCheek</sys_updated_by>
+        <sys_updated_on>2025-08-25 19:48:00</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_step_ext_output>
+    <sys_hub_step_ext_output action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String,uiUniqueId=8674b19a-3fa5-4448-9a4a-945fd34570cd</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>error_message</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>Error Message</label>
+        <mandatory>false</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="Script step">3899378683abe61028019ddfeeaad386</model>
+        <model_id>3899378683abe61028019ddfeeaad386</model_id>
+        <model_table>sys_hub_step_instance</model_table>
+        <name>var__m_sys_hub_step_ext_output_3899378683abe61028019ddfeeaad386</name>
+        <next_element/>
+        <order>3</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_step_ext_output</sys_class_name>
+        <sys_created_by>MCheek</sys_created_by>
+        <sys_created_on>2025-08-26 14:46:53</sys_created_on>
+        <sys_id>f33e375683636a1028019ddfeeaad388</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Xalient Identity Connect">14a34acb93556210a06d7b018bba10ef</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>MCheek</sys_updated_by>
+        <sys_updated_on>2025-08-26 14:46:53</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_step_ext_output>
+    <sys_hub_step_ext_output action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String,uiUniqueId=fdc1fcbf-cc18-4992-9af9-613526743102</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>result</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>Result</label>
+        <mandatory>false</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="Script step">3899378683abe61028019ddfeeaad386</model>
+        <model_id>3899378683abe61028019ddfeeaad386</model_id>
+        <model_table>sys_hub_step_instance</model_table>
+        <name>var__m_sys_hub_step_ext_output_3899378683abe61028019ddfeeaad386</name>
+        <next_element/>
+        <order>2</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_step_ext_output</sys_class_name>
+        <sys_created_by>MCheek</sys_created_by>
+        <sys_created_on>2025-08-26 14:46:53</sys_created_on>
+        <sys_id>ff3e375683636a1028019ddfeeaad384</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Xalient Identity Connect">14a34acb93556210a06d7b018bba10ef</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>MCheek</sys_updated_by>
+        <sys_updated_on>2025-08-26 14:46:53</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_step_ext_output>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=3899378683abe61028019ddfeeaad386"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>error_message</element>
+        <help/>
+        <hint/>
+        <label>Error Message</label>
+        <language>en</language>
+        <name>var__m_sys_hub_step_ext_output_3899378683abe61028019ddfeeaad386</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>MCheek</sys_created_by>
+        <sys_created_on>2025-08-26 14:46:53</sys_created_on>
+        <sys_id>3b3e375683636a1028019ddfeeaad38a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Error Message</sys_name>
+        <sys_package display_value="Xalient Identity Connect" source="x_xal_idconnect">14a34acb93556210a06d7b018bba10ef</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Xalient Identity Connect">14a34acb93556210a06d7b018bba10ef</sys_scope>
+        <sys_update_name>sys_documentation_var__m_sys_hub_step_ext_output_3899378683abe61028019ddfeeaad386_error_message_en</sys_update_name>
+        <sys_updated_by>MCheek</sys_updated_by>
+        <sys_updated_on>2025-08-26 14:46:53</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>result</element>
+        <help/>
+        <hint/>
+        <label>Result</label>
+        <language>en</language>
+        <name>var__m_sys_hub_step_ext_output_3899378683abe61028019ddfeeaad386</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>MCheek</sys_created_by>
+        <sys_created_on>2025-08-26 14:46:53</sys_created_on>
+        <sys_id>b73e375683636a1028019ddfeeaad387</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Result</sys_name>
+        <sys_package display_value="Xalient Identity Connect" source="x_xal_idconnect">14a34acb93556210a06d7b018bba10ef</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Xalient Identity Connect">14a34acb93556210a06d7b018bba10ef</sys_scope>
+        <sys_update_name>sys_documentation_var__m_sys_hub_step_ext_output_3899378683abe61028019ddfeeaad386_result_en</sys_update_name>
+        <sys_updated_by>MCheek</sys_updated_by>
+        <sys_updated_on>2025-08-26 14:46:53</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>status</element>
+        <help/>
+        <hint/>
+        <label>Status</label>
+        <language>en</language>
+        <name>var__m_sys_hub_step_ext_output_3899378683abe61028019ddfeeaad386</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>MCheek</sys_created_by>
+        <sys_created_on>2025-08-25 19:48:00</sys_created_on>
+        <sys_id>c599378683abe61028019ddfeeaad39e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Status</sys_name>
+        <sys_package display_value="Xalient Identity Connect" source="x_xal_idconnect">14a34acb93556210a06d7b018bba10ef</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Xalient Identity Connect">14a34acb93556210a06d7b018bba10ef</sys_scope>
+        <sys_update_name>sys_documentation_var__m_sys_hub_step_ext_output_3899378683abe61028019ddfeeaad386_status_en</sys_update_name>
+        <sys_updated_by>MCheek</sys_updated_by>
+        <sys_updated_on>2025-08-25 19:48:00</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_hub_action_input action="delete_multiple" query="model=c744f30e836be61028019ddfeeaad369^sys_idNOT IN3499bf0683abe61028019ddfeeaad3c4"/>
+    <sys_hub_action_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String,uiUniqueId=74a5821c-44b1-4a2f-a358-e5f9d2e1a936</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>access_request_ids</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>Access Request Ids</label>
+        <mandatory>false</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="Get ISC Access Request Status">c744f30e836be61028019ddfeeaad369</model>
+        <model_id>c744f30e836be61028019ddfeeaad369</model_id>
+        <model_table>sys_hub_action_type_definition</model_table>
+        <name>var__m_sys_hub_action_input_c744f30e836be61028019ddfeeaad369</name>
+        <next_element/>
+        <order>1</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_action_input</sys_class_name>
+        <sys_created_by>MCheek</sys_created_by>
+        <sys_created_on>2025-08-25 19:48:00</sys_created_on>
+        <sys_id>3499bf0683abe61028019ddfeeaad3c4</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Xalient Identity Connect">14a34acb93556210a06d7b018bba10ef</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>MCheek</sys_updated_by>
+        <sys_updated_on>2025-08-25 19:48:00</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_action_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=3499bf0683abe61028019ddfeeaad3c4"/>
+    <sys_hub_action_output action="delete_multiple" query="model=c744f30e836be61028019ddfeeaad369^sys_idNOT IN0599378683abe61028019ddfeeaad3ba,4199378683abe61028019ddfeeaad3be,4d99378683abe61028019ddfeeaad3b5"/>
+    <sys_hub_action_output action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,pwd2droppable=true,uiType=string,uiTypeLabel=String,uiUniqueId=7de689e5-ae5d-4e1a-ae07-764d6e68e9e4</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>status</element>
+        <element_prototype/>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_link/>
+        <internal_type display_value="String">string</internal_type>
+        <label>Status</label>
+        <mandatory>false</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="Get ISC Access Request Status">c744f30e836be61028019ddfeeaad369</model>
+        <model_id>c744f30e836be61028019ddfeeaad369</model_id>
+        <model_table>sys_hub_action_type_definition</model_table>
+        <name>var__m_sys_hub_action_output_c744f30e836be61028019ddfeeaad369</name>
+        <next_element/>
+        <order>2</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_action_output</sys_class_name>
+        <sys_created_by>MCheek</sys_created_by>
+        <sys_created_on>2025-08-25 19:48:00</sys_created_on>
+        <sys_id>0599378683abe61028019ddfeeaad3ba</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Xalient Identity Connect">14a34acb93556210a06d7b018bba10ef</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>MCheek</sys_updated_by>
+        <sys_updated_on>2025-08-25 19:48:00</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_action_output>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=0599378683abe61028019ddfeeaad3ba"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=0599378683abe61028019ddfeeaad3ba"/>
+    <sys_hub_action_output action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>action_error_output=true,element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=boolean,uiTypeLabel=True/False,uiUniqueId=f6905573-6e5c-4075-8509-cf27da37c173,visible_in_ui=false</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value>true</default_value>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>__dont_treat_as_error__</element>
+        <element_prototype/>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_link/>
+        <internal_type display_value="">boolean</internal_type>
+        <label>Don't Treat as Error</label>
+        <mandatory>false</mandatory>
+        <max_length>40</max_length>
+        <model display_value="Get ISC Access Request Status">c744f30e836be61028019ddfeeaad369</model>
+        <model_id>c744f30e836be61028019ddfeeaad369</model_id>
+        <model_table>sys_hub_action_type_definition</model_table>
+        <name>var__m_sys_hub_action_output_c744f30e836be61028019ddfeeaad369</name>
+        <next_element/>
+        <order>3</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_action_output</sys_class_name>
+        <sys_created_by>MCheek</sys_created_by>
+        <sys_created_on>2025-08-25 19:48:01</sys_created_on>
+        <sys_id>4199378683abe61028019ddfeeaad3be</sys_id>
+        <sys_mod_count>13</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Xalient Identity Connect">14a34acb93556210a06d7b018bba10ef</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>MCheek</sys_updated_by>
+        <sys_updated_on>2025-08-26 15:01:14</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_action_output>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=4199378683abe61028019ddfeeaad3be"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=4199378683abe61028019ddfeeaad3be"/>
+    <sys_hub_action_output action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>action_error_output=true,co_type_name=FDACTIONSTATUS,element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=object,uiTypeLabel=Object,uiUniqueId=5500bffb-b52b-4749-9654-8cd73764dfd9</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>__action_status__</element>
+        <element_prototype/>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_link/>
+        <internal_type display_value="String">string</internal_type>
+        <label>Action Status</label>
+        <mandatory>false</mandatory>
+        <max_length>65000</max_length>
+        <model display_value="Get ISC Access Request Status">c744f30e836be61028019ddfeeaad369</model>
+        <model_id>c744f30e836be61028019ddfeeaad369</model_id>
+        <model_table>sys_hub_action_type_definition</model_table>
+        <name>var__m_sys_hub_action_output_c744f30e836be61028019ddfeeaad369</name>
+        <next_element/>
+        <order>1</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_action_output</sys_class_name>
+        <sys_created_by>MCheek</sys_created_by>
+        <sys_created_on>2025-08-25 19:48:00</sys_created_on>
+        <sys_id>4d99378683abe61028019ddfeeaad3b5</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Xalient Identity Connect">14a34acb93556210a06d7b018bba10ef</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>MCheek</sys_updated_by>
+        <sys_updated_on>2025-08-25 19:48:00</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_action_output>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=4d99378683abe61028019ddfeeaad3b5"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=4d99378683abe61028019ddfeeaad3b5"/>
+    <sys_hub_pill_compound action="delete_multiple" query="attached_to=c744f30e836be61028019ddfeeaad369"/>
+    <sys_hub_action_status_metadata action="delete_multiple" query="action_type_id=c744f30e836be61028019ddfeeaad369^sys_idNOT IN0d99378683abe61028019ddfeeaad3c9"/>
+    <sys_hub_action_status_metadata action="INSERT_OR_UPDATE">
+        <action_type_id display_value="Get ISC Access Request Status">c744f30e836be61028019ddfeeaad369</action_type_id>
+        <sys_created_by>MCheek</sys_created_by>
+        <sys_created_on>2025-08-25 19:48:01</sys_created_on>
+        <sys_id>0d99378683abe61028019ddfeeaad3c9</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>MCheek</sys_updated_by>
+        <sys_updated_on>2025-08-25 19:48:01</sys_updated_on>
+    </sys_hub_action_status_metadata>
+    <sys_hub_status_condition action="delete_multiple" query="action_status_metadata_id=0d99378683abe61028019ddfeeaad3c9^sys_idNOT IN374eb75683636a1028019ddfeeaad382"/>
+    <sys_hub_status_condition action="INSERT_OR_UPDATE">
+        <action_status_metadata_id display_value="Created 25-08-2025 14:48:01">0d99378683abe61028019ddfeeaad3c9</action_status_metadata_id>
+        <condition>{{step[e037cb75-d231-4bae-82e7-6f9584738985].result}}=processing_exception</condition>
+        <dont_treat_as_error>true</dont_treat_as_error>
+        <label>Processing Exception Occurred</label>
+        <order>1</order>
+        <status>{"version":"1.0","complexObjectSchema":{"FlowDesigner:FDACTIONSTATUS":{"code":"Integer","code.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"Integer\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"integer\",\"mapped\":\"{}\",\"default_value\":\"\",\"label\":\"Code\",\"action_error_output\":\"true\",\"mandatory\":\"false\",\"order\":\"1\",\"max_length\":\"40\"}"},"message":"String","message.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"mapped\":\"{\\\"message\\\":\\\"{{step[e037cb75-d231-4bae-82e7-6f9584738985].error_message}}\\\"}\",\"default_value\":\"\",\"label\":\"Message\",\"action_error_output\":\"true\",\"mandatory\":\"false\",\"order\":\"2\",\"max_length\":\"4000\"}"}},"FlowDesigner:FDACTIONSTATUS.$type_facets":{"SimpleMapFacet":"{\"sourceId\":\"\",\"default_value\":\"\",\"label\":\"Action Status\",\"action_error_output\":\"true\",\"mandatory\":\"false\",\"uiUniqueId\":\"e660271a-e664-4e7b-b78a-1a5ed436cc2d\",\"uiTypeLabel\":\"Object\",\"co_type_name\":\"FDACTIONSTATUS\",\"element_mapping_provider\":\"com.glide.flow_design.action.data.FlowDesignVariableMapper\",\"read_only\":\"false\",\"sourceUiUniqueId\":\"\",\"sourceType\":\"\",\"hint\":null,\"uiType\":\"object\",\"order\":\"2\",\"max_length\":\"65000\"}"}},"serializationFormat":"JSON","complexObject":{"code":{"$cv":{"$c":"java.lang.String","$v":"1"}},"message":{"$cv":{"$c":"java.lang.String","$v":""}}}}</status>
+        <sys_created_by>MCheek</sys_created_by>
+        <sys_created_on>2025-08-26 14:47:09</sys_created_on>
+        <sys_id>374eb75683636a1028019ddfeeaad382</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>MCheek</sys_updated_by>
+        <sys_updated_on>2025-08-26 14:47:09</sys_updated_on>
+    </sys_hub_status_condition>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>access_request_ids</element>
+        <help/>
+        <hint/>
+        <label>Access Request Ids</label>
+        <language>en</language>
+        <name>var__m_sys_hub_action_input_c744f30e836be61028019ddfeeaad369</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>MCheek</sys_created_by>
+        <sys_created_on>2025-08-25 19:48:00</sys_created_on>
+        <sys_id>f499378683abe61028019ddfeeaad37f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Access Request Ids</sys_name>
+        <sys_package display_value="Xalient Identity Connect" source="x_xal_idconnect">14a34acb93556210a06d7b018bba10ef</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Xalient Identity Connect">14a34acb93556210a06d7b018bba10ef</sys_scope>
+        <sys_update_name>sys_documentation_var__m_sys_hub_action_input_c744f30e836be61028019ddfeeaad369_access_request_ids_en</sys_update_name>
+        <sys_updated_by>MCheek</sys_updated_by>
+        <sys_updated_on>2025-08-25 19:48:00</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_action_input_c744f30e836be61028019ddfeeaad369"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>status</element>
+        <help/>
+        <hint/>
+        <label>Status</label>
+        <language>en</language>
+        <name>var__m_sys_hub_action_output_c744f30e836be61028019ddfeeaad369</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>MCheek</sys_created_by>
+        <sys_created_on>2025-08-25 19:48:00</sys_created_on>
+        <sys_id>0599378683abe61028019ddfeeaad3bd</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Status</sys_name>
+        <sys_package display_value="Xalient Identity Connect" source="x_xal_idconnect">14a34acb93556210a06d7b018bba10ef</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Xalient Identity Connect">14a34acb93556210a06d7b018bba10ef</sys_scope>
+        <sys_update_name>sys_documentation_var__m_sys_hub_action_output_c744f30e836be61028019ddfeeaad369_status_en</sys_update_name>
+        <sys_updated_by>MCheek</sys_updated_by>
+        <sys_updated_on>2025-08-25 19:48:00</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>__dont_treat_as_error__</element>
+        <help/>
+        <hint/>
+        <label>Don't Treat as Error</label>
+        <language>en</language>
+        <name>var__m_sys_hub_action_output_c744f30e836be61028019ddfeeaad369</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>MCheek</sys_created_by>
+        <sys_created_on>2025-08-25 19:48:01</sys_created_on>
+        <sys_id>8d99378683abe61028019ddfeeaad3c2</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Don't Treat as Error</sys_name>
+        <sys_package display_value="Xalient Identity Connect" source="x_xal_idconnect">14a34acb93556210a06d7b018bba10ef</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Xalient Identity Connect">14a34acb93556210a06d7b018bba10ef</sys_scope>
+        <sys_update_name>sys_documentation_var__m_sys_hub_action_output_c744f30e836be61028019ddfeeaad369___dont_treat_as_error___en</sys_update_name>
+        <sys_updated_by>MCheek</sys_updated_by>
+        <sys_updated_on>2025-08-25 19:48:01</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>__action_status__</element>
+        <help/>
+        <hint/>
+        <label>Action Status</label>
+        <language>en</language>
+        <name>var__m_sys_hub_action_output_c744f30e836be61028019ddfeeaad369</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>MCheek</sys_created_by>
+        <sys_created_on>2025-08-25 19:48:00</sys_created_on>
+        <sys_id>c599378683abe61028019ddfeeaad3b9</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Action Status</sys_name>
+        <sys_package display_value="Xalient Identity Connect" source="x_xal_idconnect">14a34acb93556210a06d7b018bba10ef</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Xalient Identity Connect">14a34acb93556210a06d7b018bba10ef</sys_scope>
+        <sys_update_name>sys_documentation_var__m_sys_hub_action_output_c744f30e836be61028019ddfeeaad369___action_status___en</sys_update_name>
+        <sys_updated_by>MCheek</sys_updated_by>
+        <sys_updated_on>2025-08-25 19:48:00</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_action_output_c744f30e836be61028019ddfeeaad369"/>
+    <sys_hub_action_plan action="delete_multiple" query="action_id=c744f30e836be61028019ddfeeaad369^sys_idNOT IN8e99778683abe61028019ddfeeaad39e"/>
+    <sys_hub_action_plan action="INSERT_OR_UPDATE">
+        <action_id display_value="Get ISC Access Request Status">c744f30e836be61028019ddfeeaad369</action_id>
+        <plan>{"type":"PlanProxy","persistor":{"@class":".ChunkingPlanPersistor","table":"sys_hub_action_plan","id":"8e99778683abe61028019ddfeeaad39e","name":"plan","plan_signature":null}}</plan>
+        <snapshot>1e81846a83636a1028019ddfeeaad395</snapshot>
+        <sys_created_by>MCheek</sys_created_by>
+        <sys_created_on>2025-08-25 19:48:05</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>8e99778683abe61028019ddfeeaad39e</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_overrides/>
+        <sys_scope display_value="Xalient Identity Connect">14a34acb93556210a06d7b018bba10ef</sys_scope>
+        <sys_updated_by>MCheek</sys_updated_by>
+        <sys_updated_on>2025-08-26 15:01:16</sys_updated_on>
+    </sys_hub_action_plan>
+    <sys_hub_action_type_snapshot action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <acls/>
+        <action_status/>
+        <action_template/>
+        <annotation/>
+        <attributes>{labelCacheCleanUpExecuted=true}</attributes>
+        <authored_on_release_version>27000</authored_on_release_version>
+        <callable_by_client_api>false</callable_by_client_api>
+        <category/>
+        <copied_from/>
+        <copied_from_name/>
+        <description/>
+        <flow_priority/>
+        <internal_name>get_isc_access_request_status</internal_name>
+        <label_cache>[{"name":"{{action.access_request_ids}}","label":"action➛Access Request Ids","type":"action","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[e037cb75-d231-4bae-82e7-6f9584738985].status}}","label":"step➛Script step➛Status","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"sourceId":"","sourceUiUniqueId":"","sourceType":""}},{"name":"{{step[e037cb75-d231-4bae-82e7-6f9584738985].result}}","label":"step➛Script step➛Result","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"sourceId":"","sourceUiUniqueId":"","sourceType":""}},{"name":"{{step[e037cb75-d231-4bae-82e7-6f9584738985].error_message}}","label":"step➛Script step➛Error Message","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"sourceId":"","sourceUiUniqueId":"","sourceType":""}}]</label_cache>
+        <master>true</master>
+        <name>Get ISC Access Request Status</name>
+        <natlang/>
+        <outputs/>
+        <outputs/>
+        <parent_action display_value="Get ISC Access Request Status">c744f30e836be61028019ddfeeaad369</parent_action>
+        <sys_class_name>sys_hub_action_type_snapshot</sys_class_name>
+        <sys_created_by>MCheek</sys_created_by>
+        <sys_created_on>2025-08-25 19:48:04</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>f999778683abe61028019ddfeeaad33b</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_overrides/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Xalient Identity Connect">14a34acb93556210a06d7b018bba10ef</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>MCheek</sys_updated_by>
+        <sys_updated_on>2025-08-26 14:48:10</sys_updated_on>
+        <system_level>false</system_level>
+        <type/>
+    </sys_hub_action_type_snapshot>
+    <sys_translated_text action="delete_multiple" query="documentkey=f999778683abe61028019ddfeeaad33b"/>
+    <sys_variable_value action="delete_multiple" query="document_key=f999778683abe61028019ddfeeaad33b"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_type_snapshot</document>
+        <document_key>f999778683abe61028019ddfeeaad33b</document_key>
+        <order>1</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>MCheek</sys_created_by>
+        <sys_created_on>2025-08-25 19:48:04</sys_created_on>
+        <sys_id>7999778683abe61028019ddfeeaad37b</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>MCheek</sys_updated_by>
+        <sys_updated_on>2025-08-26 14:48:10</sys_updated_on>
+        <value>{"version":"1.0","complexObjectSchema":{"FlowDesigner:FDACTIONSTATUS":{"code":"Integer","code.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"Integer\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"integer\",\"mapped\":\"{}\",\"default_value\":\"\",\"label\":\"Code\",\"action_error_output\":\"true\",\"mandatory\":\"false\",\"order\":\"1\",\"max_length\":\"40\"}"},"message":"String","message.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"mapped\":\"{}\",\"default_value\":\"\",\"label\":\"Message\",\"action_error_output\":\"true\",\"mandatory\":\"false\",\"order\":\"2\",\"max_length\":\"4000\"}"}},"FlowDesigner:FDACTIONSTATUS.$type_facets":{"SimpleMapFacet":"{\"sourceId\":\"\",\"default_value\":\"\",\"label\":\"Action Status\",\"action_error_output\":\"true\",\"mandatory\":\"false\",\"uiUniqueId\":\"e660271a-e664-4e7b-b78a-1a5ed436cc2d\",\"uiTypeLabel\":\"Object\",\"co_type_name\":\"FDACTIONSTATUS\",\"element_mapping_provider\":\"com.glide.flow_design.action.data.FlowDesignVariableMapper\",\"read_only\":\"false\",\"sourceUiUniqueId\":\"\",\"sourceType\":\"\",\"hint\":null,\"uiType\":\"object\",\"order\":\"2\",\"max_length\":\"65000\"}"}},"serializationFormat":"JSON","complexObject":{"code":{"$cv":{"$c":"java.lang.String","$v":""}},"message":{"$cv":{"$c":"java.lang.String","$v":""}}}}</value>
+        <variable display_value="Action Status">b199778683abe61028019ddfeeaad369</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_type_snapshot</document>
+        <document_key>f999778683abe61028019ddfeeaad33b</document_key>
+        <order>3</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>MCheek</sys_created_by>
+        <sys_created_on>2025-08-25 19:48:04</sys_created_on>
+        <sys_id>b599778683abe61028019ddfeeaad37b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>MCheek</sys_updated_by>
+        <sys_updated_on>2025-08-25 19:48:04</sys_updated_on>
+        <value>0</value>
+        <variable display_value="Don't Treat as Error">b599778683abe61028019ddfeeaad371</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=f999778683abe61028019ddfeeaad33b"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>status</field>
+        <id>f999778683abe61028019ddfeeaad33b</id>
+        <sys_created_by>MCheek</sys_created_by>
+        <sys_created_on>2025-08-25 19:48:04</sys_created_on>
+        <sys_id>3599778683abe61028019ddfeeaad37b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>MCheek</sys_updated_by>
+        <sys_updated_on>2025-08-25 19:48:04</sys_updated_on>
+        <table>var__m_sys_hub_action_output_f999778683abe61028019ddfeeaad33b</table>
+        <value>{{step[e037cb75-d231-4bae-82e7-6f9584738985].status}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>__action_status__</field>
+        <id>f999778683abe61028019ddfeeaad33b</id>
+        <sys_created_by>MCheek</sys_created_by>
+        <sys_created_on>2025-08-25 19:48:04</sys_created_on>
+        <sys_id>7199778683abe61028019ddfeeaad37b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>MCheek</sys_updated_by>
+        <sys_updated_on>2025-08-25 19:48:04</sys_updated_on>
+        <table>var__m_sys_hub_action_output_f999778683abe61028019ddfeeaad33b</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>__dont_treat_as_error__</field>
+        <id>f999778683abe61028019ddfeeaad33b</id>
+        <sys_created_by>MCheek</sys_created_by>
+        <sys_created_on>2025-08-25 19:48:04</sys_created_on>
+        <sys_id>bd99778683abe61028019ddfeeaad37a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>MCheek</sys_updated_by>
+        <sys_updated_on>2025-08-25 19:48:04</sys_updated_on>
+        <table>var__m_sys_hub_action_output_f999778683abe61028019ddfeeaad33b</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_step_instance action="delete_multiple" query="action=f999778683abe61028019ddfeeaad33b^sys_idNOT INb599778683abe61028019ddfeeaad353"/>
+    <sys_hub_step_instance action="INSERT_OR_UPDATE">
+        <action display_value="Get ISC Access Request Status">f999778683abe61028019ddfeeaad33b</action>
+        <cid>e037cb75-d231-4bae-82e7-6f9584738985</cid>
+        <error_handling_type>1</error_handling_type>
+        <extended_inputs/>
+        <extended_inputs/>
+        <extended_outputs/>
+        <icon/>
+        <inputs/>
+        <label>Script step</label>
+        <order>1</order>
+        <outputs/>
+        <section/>
+        <step_type display_value="Script">106afb6647032200b4fad7527c9a71e7</step_type>
+        <sys_created_by>MCheek</sys_created_by>
+        <sys_created_on>2025-08-25 19:48:04</sys_created_on>
+        <sys_id>b599778683abe61028019ddfeeaad353</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_scope display_value="Xalient Identity Connect">14a34acb93556210a06d7b018bba10ef</sys_scope>
+        <sys_updated_by>MCheek</sys_updated_by>
+        <sys_updated_on>2025-08-26 15:01:15</sys_updated_on>
+    </sys_hub_step_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=b599778683abe61028019ddfeeaad353"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>b599778683abe61028019ddfeeaad353</document_key>
+        <order>400</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>MCheek</sys_created_by>
+        <sys_created_on>2025-08-25 19:48:04</sys_created_on>
+        <sys_id>3599778683abe61028019ddfeeaad365</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>MCheek</sys_updated_by>
+        <sys_updated_on>2025-08-25 19:48:04</sys_updated_on>
+        <value>35aa573fd7802200bdbaee5b5e610375</value>
+        <variable display_value="MID Application">f5e56d79b3101300176b051a16a8dce4</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>b599778683abe61028019ddfeeaad353</document_key>
+        <order>600</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>MCheek</sys_created_by>
+        <sys_created_on>2025-08-25 19:48:04</sys_created_on>
+        <sys_id>f599778683abe61028019ddfeeaad365</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_updated_by>MCheek</sys_updated_by>
+        <sys_updated_on>2025-08-26 15:01:15</sys_updated_on>
+        <value>(function execute(inputs, outputs) {&#13;
+    const res_request_status = new x_xal_idconnect.XalientUtilitiesCatalogItem().getAccessRequestStatus(inputs.access_request_ids.toString());&#13;
+&#13;
+    try {&#13;
+        if (res_request_status.getStatusCode() == 200) {&#13;
+            const resb_request_status = JSON.parse(res_request_status.getBody());&#13;
+            outputs.status = evaluateStates(resb_request_status);&#13;
+        } else {&#13;
+            throw `Error retrieving request status -\r\n\r\n&#13;
+				Status Code - ${res_request_status.getStatusCode()}\r\n&#13;
+				Server Response - \r\n\r\n ${res_request_status.getBody()}`;&#13;
+        }&#13;
+    } catch (exception) {&#13;
+        output.error_message = exception;&#13;
+        output.result = 'processing_exception';&#13;
+    }&#13;
+&#13;
+    function evaluateStates(response) {&#13;
+        const failureStates = new Set([&#13;
+            "CANCELLED",&#13;
+            "TERMINATED",&#13;
+            "REJECTED",&#13;
+            "PROVISIONING_FAILED",&#13;
+            "NOT_ALL_ITEMS_PROVISIONED",&#13;
+            "ERROR"&#13;
+        ]);&#13;
+&#13;
+        let allCompleted = true;&#13;
+&#13;
+        for (const item of response) {&#13;
+            const state = item.state;&#13;
+&#13;
+            if (failureStates.has(state)) {&#13;
+                return "failure";&#13;
+            }&#13;
+&#13;
+            if (state !== "REQUEST_COMPLETED") {&#13;
+                allCompleted = false;&#13;
+            }&#13;
+        }&#13;
+&#13;
+        return allCompleted ? "completed" : "in_progress";&#13;
+    }&#13;
+})(inputs, outputs);&#13;
+&#13;
+</value>
+        <variable display_value="Script">71aa7f6647032200b4fad7527c9a719b</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=b599778683abe61028019ddfeeaad353"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>access_request_ids</field>
+        <id>b599778683abe61028019ddfeeaad353</id>
+        <sys_created_by>MCheek</sys_created_by>
+        <sys_created_on>2025-08-25 19:48:04</sys_created_on>
+        <sys_id>3199778683abe61028019ddfeeaad366</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>MCheek</sys_updated_by>
+        <sys_updated_on>2025-08-25 19:48:04</sys_updated_on>
+        <table>var__m_sys_hub_step_ext_input_b599778683abe61028019ddfeeaad353</table>
+        <value>{{action.access_request_ids}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_step_ext_output_b599778683abe61028019ddfeeaad353^id=b599778683abe61028019ddfeeaad353"/>
+    <sys_element_mapping action="delete_multiple" query="table=var__m_sys_flow_step_definition_input_106afb6647032200b4fad7527c9a71e7^id=b599778683abe61028019ddfeeaad353"/>
+    <sys_hub_step_ext_input action="delete_multiple" query="model=b599778683abe61028019ddfeeaad353^sys_idNOT INf599778683abe61028019ddfeeaad357"/>
+    <sys_hub_step_ext_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>access_request_ids</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>access_request_ids</label>
+        <mandatory>true</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="Script step">b599778683abe61028019ddfeeaad353</model>
+        <model_id>b599778683abe61028019ddfeeaad353</model_id>
+        <model_table>sys_hub_step_instance</model_table>
+        <name>var__m_sys_hub_step_ext_input_b599778683abe61028019ddfeeaad353</name>
+        <next_element/>
+        <order>0</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_step_ext_input</sys_class_name>
+        <sys_created_by>MCheek</sys_created_by>
+        <sys_created_on>2025-08-25 19:48:04</sys_created_on>
+        <sys_id>f599778683abe61028019ddfeeaad357</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Xalient Identity Connect">14a34acb93556210a06d7b018bba10ef</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>MCheek</sys_updated_by>
+        <sys_updated_on>2025-08-25 19:48:04</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_step_ext_input>
+    <sys_hub_step_ext_output action="delete_multiple" query="model=b599778683abe61028019ddfeeaad353^sys_idNOT IN3d99778683abe61028019ddfeeaad35b,6a8efb5683636a1028019ddfeeaad33b,a68efb5683636a1028019ddfeeaad338"/>
+    <sys_hub_step_ext_output action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String,uiUniqueId=7c667de2-2fe2-480d-9356-2ebf5767b075</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>status</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>Status</label>
+        <mandatory>false</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="Script step">b599778683abe61028019ddfeeaad353</model>
+        <model_id>b599778683abe61028019ddfeeaad353</model_id>
+        <model_table>sys_hub_step_instance</model_table>
+        <name>var__m_sys_hub_step_ext_output_b599778683abe61028019ddfeeaad353</name>
+        <next_element/>
+        <order>1</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_step_ext_output</sys_class_name>
+        <sys_created_by>MCheek</sys_created_by>
+        <sys_created_on>2025-08-25 19:48:04</sys_created_on>
+        <sys_id>3d99778683abe61028019ddfeeaad35b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Xalient Identity Connect">14a34acb93556210a06d7b018bba10ef</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>MCheek</sys_updated_by>
+        <sys_updated_on>2025-08-25 19:48:04</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_step_ext_output>
+    <sys_hub_step_ext_output action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String,uiUniqueId=8674b19a-3fa5-4448-9a4a-945fd34570cd</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>error_message</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>Error Message</label>
+        <mandatory>false</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="Script step">b599778683abe61028019ddfeeaad353</model>
+        <model_id>b599778683abe61028019ddfeeaad353</model_id>
+        <model_table>sys_hub_step_instance</model_table>
+        <name>var__m_sys_hub_step_ext_output_b599778683abe61028019ddfeeaad353</name>
+        <next_element/>
+        <order>3</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_step_ext_output</sys_class_name>
+        <sys_created_by>MCheek</sys_created_by>
+        <sys_created_on>2025-08-26 14:48:10</sys_created_on>
+        <sys_id>6a8efb5683636a1028019ddfeeaad33b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Xalient Identity Connect">14a34acb93556210a06d7b018bba10ef</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>MCheek</sys_updated_by>
+        <sys_updated_on>2025-08-26 14:48:10</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_step_ext_output>
+    <sys_hub_step_ext_output action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String,uiUniqueId=fdc1fcbf-cc18-4992-9af9-613526743102</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>result</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>Result</label>
+        <mandatory>false</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="Script step">b599778683abe61028019ddfeeaad353</model>
+        <model_id>b599778683abe61028019ddfeeaad353</model_id>
+        <model_table>sys_hub_step_instance</model_table>
+        <name>var__m_sys_hub_step_ext_output_b599778683abe61028019ddfeeaad353</name>
+        <next_element/>
+        <order>2</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_step_ext_output</sys_class_name>
+        <sys_created_by>MCheek</sys_created_by>
+        <sys_created_on>2025-08-26 14:48:10</sys_created_on>
+        <sys_id>a68efb5683636a1028019ddfeeaad338</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Xalient Identity Connect">14a34acb93556210a06d7b018bba10ef</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>MCheek</sys_updated_by>
+        <sys_updated_on>2025-08-26 14:48:10</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_step_ext_output>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=b599778683abe61028019ddfeeaad353"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>result</element>
+        <help/>
+        <hint/>
+        <label>Result</label>
+        <language>en</language>
+        <name>var__m_sys_hub_step_ext_output_b599778683abe61028019ddfeeaad353</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>MCheek</sys_created_by>
+        <sys_created_on>2025-08-26 14:48:10</sys_created_on>
+        <sys_id>2e8efb5683636a1028019ddfeeaad33a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Result</sys_name>
+        <sys_package display_value="Xalient Identity Connect" source="x_xal_idconnect">14a34acb93556210a06d7b018bba10ef</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Xalient Identity Connect">14a34acb93556210a06d7b018bba10ef</sys_scope>
+        <sys_update_name>sys_documentation_var__m_sys_hub_step_ext_output_b599778683abe61028019ddfeeaad353_result_en</sys_update_name>
+        <sys_updated_by>MCheek</sys_updated_by>
+        <sys_updated_on>2025-08-26 14:48:10</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>error_message</element>
+        <help/>
+        <hint/>
+        <label>Error Message</label>
+        <language>en</language>
+        <name>var__m_sys_hub_step_ext_output_b599778683abe61028019ddfeeaad353</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>MCheek</sys_created_by>
+        <sys_created_on>2025-08-26 14:48:10</sys_created_on>
+        <sys_id>ae8efb5683636a1028019ddfeeaad33d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Error Message</sys_name>
+        <sys_package display_value="Xalient Identity Connect" source="x_xal_idconnect">14a34acb93556210a06d7b018bba10ef</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Xalient Identity Connect">14a34acb93556210a06d7b018bba10ef</sys_scope>
+        <sys_update_name>sys_documentation_var__m_sys_hub_step_ext_output_b599778683abe61028019ddfeeaad353_error_message_en</sys_update_name>
+        <sys_updated_by>MCheek</sys_updated_by>
+        <sys_updated_on>2025-08-26 14:48:10</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>status</element>
+        <help/>
+        <hint/>
+        <label>Status</label>
+        <language>en</language>
+        <name>var__m_sys_hub_step_ext_output_b599778683abe61028019ddfeeaad353</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>MCheek</sys_created_by>
+        <sys_created_on>2025-08-25 19:48:04</sys_created_on>
+        <sys_id>b999778683abe61028019ddfeeaad35e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Status</sys_name>
+        <sys_package display_value="Xalient Identity Connect" source="x_xal_idconnect">14a34acb93556210a06d7b018bba10ef</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Xalient Identity Connect">14a34acb93556210a06d7b018bba10ef</sys_scope>
+        <sys_update_name>sys_documentation_var__m_sys_hub_step_ext_output_b599778683abe61028019ddfeeaad353_status_en</sys_update_name>
+        <sys_updated_by>MCheek</sys_updated_by>
+        <sys_updated_on>2025-08-25 19:48:04</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_hub_action_input action="delete_multiple" query="model=f999778683abe61028019ddfeeaad33b^sys_idNOT INf599778683abe61028019ddfeeaad33e"/>
+    <sys_hub_action_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String,uiUniqueId=74a5821c-44b1-4a2f-a358-e5f9d2e1a936</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>access_request_ids</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>Access Request Ids</label>
+        <mandatory>false</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="Get ISC Access Request Status">f999778683abe61028019ddfeeaad33b</model>
+        <model_id>f999778683abe61028019ddfeeaad33b</model_id>
+        <model_table>sys_hub_action_type_snapshot</model_table>
+        <name>var__m_sys_hub_action_input_f999778683abe61028019ddfeeaad33b</name>
+        <next_element/>
+        <order>1</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_action_input</sys_class_name>
+        <sys_created_by>MCheek</sys_created_by>
+        <sys_created_on>2025-08-25 19:48:04</sys_created_on>
+        <sys_id>f599778683abe61028019ddfeeaad33e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Xalient Identity Connect">14a34acb93556210a06d7b018bba10ef</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>MCheek</sys_updated_by>
+        <sys_updated_on>2025-08-25 19:48:04</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_action_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=f599778683abe61028019ddfeeaad33e"/>
+    <sys_hub_action_output action="delete_multiple" query="model=f999778683abe61028019ddfeeaad33b^sys_idNOT IN7999778683abe61028019ddfeeaad36d,b199778683abe61028019ddfeeaad369,b599778683abe61028019ddfeeaad371"/>
+    <sys_hub_action_output action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,pwd2droppable=true,uiType=string,uiTypeLabel=String,uiUniqueId=7de689e5-ae5d-4e1a-ae07-764d6e68e9e4</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>status</element>
+        <element_prototype/>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_link/>
+        <internal_type display_value="String">string</internal_type>
+        <label>Status</label>
+        <mandatory>false</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="Get ISC Access Request Status">f999778683abe61028019ddfeeaad33b</model>
+        <model_id>f999778683abe61028019ddfeeaad33b</model_id>
+        <model_table>sys_hub_action_type_snapshot</model_table>
+        <name>var__m_sys_hub_action_output_f999778683abe61028019ddfeeaad33b</name>
+        <next_element/>
+        <order>2</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_action_output</sys_class_name>
+        <sys_created_by>MCheek</sys_created_by>
+        <sys_created_on>2025-08-25 19:48:04</sys_created_on>
+        <sys_id>7999778683abe61028019ddfeeaad36d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Xalient Identity Connect">14a34acb93556210a06d7b018bba10ef</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>MCheek</sys_updated_by>
+        <sys_updated_on>2025-08-25 19:48:04</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_action_output>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=7999778683abe61028019ddfeeaad36d"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=7999778683abe61028019ddfeeaad36d"/>
+    <sys_hub_action_output action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>action_error_output=true,co_type_name=FDACTIONSTATUS,element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=object,uiTypeLabel=Object,uiUniqueId=5500bffb-b52b-4749-9654-8cd73764dfd9</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>__action_status__</element>
+        <element_prototype/>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_link/>
+        <internal_type display_value="String">string</internal_type>
+        <label>Action Status</label>
+        <mandatory>false</mandatory>
+        <max_length>65000</max_length>
+        <model display_value="Get ISC Access Request Status">f999778683abe61028019ddfeeaad33b</model>
+        <model_id>f999778683abe61028019ddfeeaad33b</model_id>
+        <model_table>sys_hub_action_type_snapshot</model_table>
+        <name>var__m_sys_hub_action_output_f999778683abe61028019ddfeeaad33b</name>
+        <next_element/>
+        <order>1</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_action_output</sys_class_name>
+        <sys_created_by>MCheek</sys_created_by>
+        <sys_created_on>2025-08-25 19:48:04</sys_created_on>
+        <sys_id>b199778683abe61028019ddfeeaad369</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Xalient Identity Connect">14a34acb93556210a06d7b018bba10ef</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>MCheek</sys_updated_by>
+        <sys_updated_on>2025-08-25 19:48:04</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_action_output>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=b199778683abe61028019ddfeeaad369"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=b199778683abe61028019ddfeeaad369"/>
+    <sys_hub_action_output action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>action_error_output=true,element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=boolean,uiTypeLabel=True/False,uiUniqueId=f6905573-6e5c-4075-8509-cf27da37c173,visible_in_ui=false</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value>true</default_value>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>__dont_treat_as_error__</element>
+        <element_prototype/>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_link/>
+        <internal_type display_value="">boolean</internal_type>
+        <label>Don't Treat as Error</label>
+        <mandatory>false</mandatory>
+        <max_length>40</max_length>
+        <model display_value="Get ISC Access Request Status">f999778683abe61028019ddfeeaad33b</model>
+        <model_id>f999778683abe61028019ddfeeaad33b</model_id>
+        <model_table>sys_hub_action_type_snapshot</model_table>
+        <name>var__m_sys_hub_action_output_f999778683abe61028019ddfeeaad33b</name>
+        <next_element/>
+        <order>3</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_action_output</sys_class_name>
+        <sys_created_by>MCheek</sys_created_by>
+        <sys_created_on>2025-08-25 19:48:04</sys_created_on>
+        <sys_id>b599778683abe61028019ddfeeaad371</sys_id>
+        <sys_mod_count>5</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Xalient Identity Connect">14a34acb93556210a06d7b018bba10ef</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>MCheek</sys_updated_by>
+        <sys_updated_on>2025-08-26 15:01:15</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_action_output>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=b599778683abe61028019ddfeeaad371"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=b599778683abe61028019ddfeeaad371"/>
+    <sys_hub_pill_compound action="delete_multiple" query="attached_to=f999778683abe61028019ddfeeaad33b"/>
+    <sys_hub_action_status_metadata action="delete_multiple" query="action_type_id=f999778683abe61028019ddfeeaad33b^sys_idNOT IN7199778683abe61028019ddfeeaad37d"/>
+    <sys_hub_action_status_metadata action="INSERT_OR_UPDATE">
+        <action_type_id display_value="Get ISC Access Request Status">f999778683abe61028019ddfeeaad33b</action_type_id>
+        <sys_created_by>MCheek</sys_created_by>
+        <sys_created_on>2025-08-25 19:48:04</sys_created_on>
+        <sys_id>7199778683abe61028019ddfeeaad37d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>MCheek</sys_updated_by>
+        <sys_updated_on>2025-08-25 19:48:04</sys_updated_on>
+    </sys_hub_action_status_metadata>
+    <sys_hub_status_condition action="delete_multiple" query="action_status_metadata_id=7199778683abe61028019ddfeeaad37d^sys_idNOT IN9281846a83636a1028019ddfeeaad395"/>
+    <sys_hub_status_condition action="INSERT_OR_UPDATE">
+        <action_status_metadata_id display_value="Created 25-08-2025 14:48:04">7199778683abe61028019ddfeeaad37d</action_status_metadata_id>
+        <condition>{{step[e037cb75-d231-4bae-82e7-6f9584738985].result}}=processing_exception</condition>
+        <dont_treat_as_error>true</dont_treat_as_error>
+        <label>Processing Exception Occurred</label>
+        <order>1</order>
+        <status>{"version":"1.0","complexObjectSchema":{"FlowDesigner:FDACTIONSTATUS":{"code":"Integer","code.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"Integer\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"integer\",\"mapped\":\"{}\",\"default_value\":\"\",\"label\":\"Code\",\"action_error_output\":\"true\",\"mandatory\":\"false\",\"order\":\"1\",\"max_length\":\"40\"}"},"message":"String","message.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"mapped\":\"{\\\"message\\\":\\\"{{step[e037cb75-d231-4bae-82e7-6f9584738985].error_message}}\\\"}\",\"default_value\":\"\",\"label\":\"Message\",\"action_error_output\":\"true\",\"mandatory\":\"false\",\"order\":\"2\",\"max_length\":\"4000\"}"}},"FlowDesigner:FDACTIONSTATUS.$type_facets":{"SimpleMapFacet":"{\"sourceId\":\"\",\"default_value\":\"\",\"label\":\"Action Status\",\"action_error_output\":\"true\",\"mandatory\":\"false\",\"uiUniqueId\":\"e660271a-e664-4e7b-b78a-1a5ed436cc2d\",\"uiTypeLabel\":\"Object\",\"co_type_name\":\"FDACTIONSTATUS\",\"element_mapping_provider\":\"com.glide.flow_design.action.data.FlowDesignVariableMapper\",\"read_only\":\"false\",\"sourceUiUniqueId\":\"\",\"sourceType\":\"\",\"hint\":null,\"uiType\":\"object\",\"order\":\"2\",\"max_length\":\"65000\"}"}},"serializationFormat":"JSON","complexObject":{"code":{"$cv":{"$c":"java.lang.String","$v":"1"}},"message":{"$cv":{"$c":"java.lang.String","$v":""}}}}</status>
+        <sys_created_by>MCheek</sys_created_by>
+        <sys_created_on>2025-08-26 15:01:15</sys_created_on>
+        <sys_id>9281846a83636a1028019ddfeeaad395</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>MCheek</sys_updated_by>
+        <sys_updated_on>2025-08-26 15:01:15</sys_updated_on>
+    </sys_hub_status_condition>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>access_request_ids</element>
+        <help/>
+        <hint/>
+        <label>Access Request Ids</label>
+        <language>en</language>
+        <name>var__m_sys_hub_action_input_f999778683abe61028019ddfeeaad33b</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>MCheek</sys_created_by>
+        <sys_created_on>2025-08-25 19:48:04</sys_created_on>
+        <sys_id>b199778683abe61028019ddfeeaad342</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Access Request Ids</sys_name>
+        <sys_package display_value="Xalient Identity Connect" source="x_xal_idconnect">14a34acb93556210a06d7b018bba10ef</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Xalient Identity Connect">14a34acb93556210a06d7b018bba10ef</sys_scope>
+        <sys_update_name>sys_documentation_var__m_sys_hub_action_input_f999778683abe61028019ddfeeaad33b_access_request_ids_en</sys_update_name>
+        <sys_updated_by>MCheek</sys_updated_by>
+        <sys_updated_on>2025-08-25 19:48:04</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_action_input_f999778683abe61028019ddfeeaad33b"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>__action_status__</element>
+        <help/>
+        <hint/>
+        <label>Action Status</label>
+        <language>en</language>
+        <name>var__m_sys_hub_action_output_f999778683abe61028019ddfeeaad33b</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>MCheek</sys_created_by>
+        <sys_created_on>2025-08-25 19:48:04</sys_created_on>
+        <sys_id>3d99778683abe61028019ddfeeaad36c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Action Status</sys_name>
+        <sys_package display_value="Xalient Identity Connect" source="x_xal_idconnect">14a34acb93556210a06d7b018bba10ef</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Xalient Identity Connect">14a34acb93556210a06d7b018bba10ef</sys_scope>
+        <sys_update_name>sys_documentation_var__m_sys_hub_action_output_f999778683abe61028019ddfeeaad33b___action_status___en</sys_update_name>
+        <sys_updated_by>MCheek</sys_updated_by>
+        <sys_updated_on>2025-08-25 19:48:04</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>status</element>
+        <help/>
+        <hint/>
+        <label>Status</label>
+        <language>en</language>
+        <name>var__m_sys_hub_action_output_f999778683abe61028019ddfeeaad33b</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>MCheek</sys_created_by>
+        <sys_created_on>2025-08-25 19:48:04</sys_created_on>
+        <sys_id>7999778683abe61028019ddfeeaad370</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Status</sys_name>
+        <sys_package display_value="Xalient Identity Connect" source="x_xal_idconnect">14a34acb93556210a06d7b018bba10ef</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Xalient Identity Connect">14a34acb93556210a06d7b018bba10ef</sys_scope>
+        <sys_update_name>sys_documentation_var__m_sys_hub_action_output_f999778683abe61028019ddfeeaad33b_status_en</sys_update_name>
+        <sys_updated_by>MCheek</sys_updated_by>
+        <sys_updated_on>2025-08-25 19:48:04</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>__dont_treat_as_error__</element>
+        <help/>
+        <hint/>
+        <label>Don't Treat as Error</label>
+        <language>en</language>
+        <name>var__m_sys_hub_action_output_f999778683abe61028019ddfeeaad33b</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>MCheek</sys_created_by>
+        <sys_created_on>2025-08-25 19:48:04</sys_created_on>
+        <sys_id>f199778683abe61028019ddfeeaad376</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Don't Treat as Error</sys_name>
+        <sys_package display_value="Xalient Identity Connect" source="x_xal_idconnect">14a34acb93556210a06d7b018bba10ef</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Xalient Identity Connect">14a34acb93556210a06d7b018bba10ef</sys_scope>
+        <sys_update_name>sys_documentation_var__m_sys_hub_action_output_f999778683abe61028019ddfeeaad33b___dont_treat_as_error___en</sys_update_name>
+        <sys_updated_by>MCheek</sys_updated_by>
+        <sys_updated_on>2025-08-25 19:48:04</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_action_output_f999778683abe61028019ddfeeaad33b"/>
+    <sys_hub_action_type_definition action="UPDATE">
+        <sys_id>c744f30e836be61028019ddfeeaad369</sys_id>
+        <latest_snapshot>f999778683abe61028019ddfeeaad33b</latest_snapshot>
+        <compiler_build>glide-yokohama-12-18-2024__patch6-hotfix1-08-01-2025_08-05-2025_2351.zip</compiler_build>
+    </sys_hub_action_type_definition>
+</record_update>

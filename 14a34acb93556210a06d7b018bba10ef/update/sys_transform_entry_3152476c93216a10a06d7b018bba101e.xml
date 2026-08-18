@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_transform_entry">
+    <sys_transform_entry action="INSERT_OR_UPDATE">
+        <choice_action>create</choice_action>
+        <coalesce>false</coalesce>
+        <coalesce_case_sensitive>false</coalesce_case_sensitive>
+        <coalesce_empty_fields>false</coalesce_empty_fields>
+        <date_format>yyyy-MM-dd HH:mm:ss</date_format>
+        <map display_value="SailPoint Access Item Transform">3bc18b2c93216a10a06d7b018bba1087</map>
+        <reference_value_field/>
+        <source_field>u_description</source_field>
+        <source_script><![CDATA[answer = (function transformEntry(source) {
+
+	// Add your code here
+	return ""; // return the value to be put into the target field
+
+})(source);]]></source_script>
+        <source_table>x_xal_idconnect_sailpoint_access_item_staging</source_table>
+        <sys_class_name>sys_transform_entry</sys_class_name>
+        <sys_created_by>mark.cheek</sys_created_by>
+        <sys_created_on>2025-05-13 13:50:12</sys_created_on>
+        <sys_id>3152476c93216a10a06d7b018bba101e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>u_description</sys_name>
+        <sys_package display_value="Xalient Identity Connect" source="x_xal_idconnect">14a34acb93556210a06d7b018bba10ef</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Xalient Identity Connect">14a34acb93556210a06d7b018bba10ef</sys_scope>
+        <sys_update_name>sys_transform_entry_3152476c93216a10a06d7b018bba101e</sys_update_name>
+        <sys_updated_by>mark.cheek</sys_updated_by>
+        <sys_updated_on>2025-05-13 13:50:12</sys_updated_on>
+        <target_field>description</target_field>
+        <target_table>x_xal_idconnect_isc_access_item</target_table>
+        <use_source_script>false</use_source_script>
+    </sys_transform_entry>
+</record_update>

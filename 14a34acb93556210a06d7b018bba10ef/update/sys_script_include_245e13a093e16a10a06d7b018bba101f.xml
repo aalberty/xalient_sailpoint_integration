@@ -1,0 +1,306 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script_include">
+    <sys_script_include action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <active>true</active>
+        <api_name>x_xal_idconnect.XalientUtilitiesCatalogItem</api_name>
+        <caller_access>2</caller_access>
+        <client_callable>false</client_callable>
+        <description/>
+        <mobile_callable>false</mobile_callable>
+        <name>XalientUtilitiesCatalogItem</name>
+        <sandbox_callable>false</sandbox_callable>
+        <script><![CDATA[var XalientUtilitiesCatalogItem = Class.create();
+XalientUtilitiesCatalogItem.prototype = Object.extendsObject(x_xal_idconnect.XalientUtilitiesCore, {
+	initialize: function () { },
+
+	//Filters the access item list collector
+	accessItemReassignmentListCollector: function (gr_ritm) {
+		switch (gr_ritm.variables.filter_type.getValue()) {
+			case 'owner':
+				return `owner=${gr_ritm.variables.owner.toString()}`;
+			case 'application':
+				return `business_application=${gr_ritm.variables.application.toString()}`;
+			default:
+				return '';
+		}
+	},
+
+	//Populates the list of owners available in the filter by owner option
+	accessItemReassignmentOwner: function () {
+		const owners = [];
+		const ga_owner = new GlideAggregate('x_xal_idconnect_isc_access_item');
+		ga_owner.addAggregate('COUNT', 'owner');
+		ga_owner.addEncodedQuery('owner!=NULL');
+		ga_owner.query();
+
+		while (ga_owner.next()) {
+			owners.push(ga_owner.getValue('owner'));
+		}
+
+		return `sys_idIN${owners.toString()}`;
+	},
+
+	//Populates the list of applications available in the filter by owner option
+	accessItemReassignmentApplication: function () {
+		const apps = [];
+		const ga_owner = new GlideAggregate('x_xal_idconnect_isc_access_item');
+		ga_owner.addAggregate('COUNT', 'business_application');
+		ga_owner.addEncodedQuery('business_application!=NULL');
+		ga_owner.query();
+
+		while (ga_owner.next()) {
+			apps.push(ga_owner.getValue('owner'));
+		}
+
+		return `sys_idIN${apps.toString()}`;
+	},
+	accessRequestAppFilter: function (gr_ritm) {
+		const gr_config = new GlideRecord('x_xal_idconnect_catalog_item_config');
+		gr_config.get('catalog_item', gr_ritm.cat_item.sys_id);
+
+		gs.info('app filter');
+
+		return `sys_idIN${gr_config.business_applications}`;
+
+	},
+
+	accessRequestItemFilter: function (gr_ritm) {
+		if (gr_ritm.variables.application_filter != '') {
+			return `business_application.sys_idIN${gr_ritm.variables.application_filter}`;
+		} else {
+			const gr_config = new GlideRecord('x_xal_idconnect_catalog_item_config');
+			gr_config.get('catalog_item', gr_ritm.cat_item.sys_id);
+
+			return `business_application.sys_idIN${gr_config.business_applications}`;
+		}
+
+	},
+
+	buildProvisioningPlan: function (gr_ritm) {
+		const gr_item_config = new GlideRecord('x_xal_idconnect_catalog_item_config');
+		gr_item_config.addEncodedQuery(`catalog_item.sys_id=${gr_ritm.cat_item.sys_id.toString()}`);
+		gr_item_config.query();
+
+		if (gr_item_config.next()) {
+			if (gr_item_config.provisioning_tasks && gr_item_config.provisioning_tasks != '') {
+				const provisioning_plan = [];
+
+				const gr_item_tasks = new GlideRecord('x_xal_idconnect_catalog_item_tasks');
+				gr_item_tasks.addEncodedQuery(`sys_idIN${gr_item_config.provisioning_tasks}`);
+				gr_item_tasks.orderBy('order');
+				gr_item_tasks.query();
+
+				while (gr_item_tasks.next()) {
+					provisioning_plan.push({
+						"sys_id": gr_item_tasks.sys_id.getValue(),
+						"order": parseInt(gr_item_tasks.order.getValue()),
+						"type": gr_item_tasks.type.getValue(),
+						"short_description": gr_item_tasks.task_short_description.getValue(),
+						"description": gr_item_tasks.task_description.getValue(),
+						"assignment_group": gr_item_tasks.assignment_group.getValue(),
+						"current_task": false,
+						"completed": false
+					});
+				}
+				return provisioning_plan;
+			}
+		}
+
+		return false;
+	},
+
+	getIdentityRoleAssignments: function (identity_id) {
+		const access_token = this.getToken();
+
+		const rm_identity = new sn_ws.RESTMessageV2('SailPoint ISC', 'identity-role-assignments-list');
+		rm_identity.setStringParameterNoEscape('tenant', gs.getProperty('x_xal_idconnect.isc_tenant'));
+		rm_identity.setStringParameterNoEscape('domain', gs.getProperty('x_xal_idconnect.domain'));
+		rm_identity.setStringParameterNoEscape('identity_id', identity_id);
+		rm_identity.setRequestHeader('Authorization', 'Bearer ' + access_token);
+
+		const res_identity = rm_identity.execute();
+
+		return JSON.parse(res_identity.getBody());
+	},
+
+	getIdentityRoleAssignmentDetails: function (identity_id, assignment_id) {
+		const access_token = this.getToken();
+
+		const rm_identity = new sn_ws.RESTMessageV2('SailPoint ISC', 'identity-role-assignment-details');
+		rm_identity.setStringParameterNoEscape('tenant', gs.getProperty('x_xal_idconnect.isc_tenant'));
+		rm_identity.setStringParameterNoEscape('domain', gs.getProperty('x_xal_idconnect.domain'));
+		rm_identity.setStringParameterNoEscape('identity_id', identity_id);
+		rm_identity.setStringParameterNoEscape('assignment_id', assignment_id);
+		rm_identity.setRequestHeader('Authorization', 'Bearer ' + access_token);
+
+		const res_identity = rm_identity.execute();
+
+		return JSON.parse(res_identity.getBody());
+	},
+
+	submitAccessRequest: function (request_body) {
+		const access_token = this.getToken();
+		const rm_access_request = new sn_ws.RESTMessageV2('SailPoint ISC', 'access-request-create');
+		rm_access_request.setStringParameterNoEscape('tenant', gs.getProperty('x_xal_idconnect.isc_tenant'));
+		rm_access_request.setStringParameterNoEscape('domain', gs.getProperty('x_xal_idconnect.domain'));
+		rm_access_request.setRequestHeader('Authorization', 'Bearer ' + access_token);
+		rm_access_request.setRequestBody(JSON.stringify(request_body));
+
+		return rm_access_request.execute();
+	},
+
+	getAccessRequestStatus: function (access_request_ids) {
+		const query_param_ids = access_request_ids
+			.split(',')
+			.map(id => `"${id.trim()}"`)
+			.join(',');
+
+		const access_token = this.getToken();
+		const rm_access_request = new sn_ws.RESTMessageV2('SailPoint ISC', 'access-request-status-list');
+		rm_access_request.setStringParameterNoEscape('tenant', gs.getProperty('x_xal_idconnect.isc_tenant'));
+		rm_access_request.setStringParameterNoEscape('domain', gs.getProperty('x_xal_idconnect.domain'));
+		rm_access_request.setQueryParameter('filters', `accessRequestId in (${query_param_ids})`);
+		rm_access_request.setRequestHeader('Authorization', 'Bearer ' + access_token);
+
+		return rm_access_request.execute();
+	},
+	getIdentity: function (search_attribute, search_value) {
+		const filter = `${search_attribute} eq "${search_value}"`;
+		const access_token = this.getToken();
+
+		const rm_identity = new sn_ws.RESTMessageV2('SailPoint ISC', 'identities-list');
+		rm_identity.setStringParameterNoEscape('tenant', gs.getProperty('x_xal_idconnect.isc_tenant'));
+		rm_identity.setStringParameterNoEscape('domain', gs.getProperty('x_xal_idconnect.domain'));
+		rm_identity.setRequestHeader('Authorization', 'Bearer ' + access_token);
+
+		if (filter) {
+			rm_identity.setQueryParameter('filters', filter);
+		}
+
+		const res_identity = rm_identity.execute();
+		gs.info(res_identity.getBody());
+		return JSON.parse(res_identity.getBody());
+	},
+	detectSODViolations: function (gr_ritm) {
+		const accessItemRefs = [];
+
+		switch (gr_ritm.variables.isc_access_item.sailpoint_object_type.toString()) {
+			case 'entitlement': {
+				accessItemRefs.push({
+					"type": "ENTITLEMENT",
+					"id": gr_ritm.variables.isc_access_item.sailpoint_id.toString()
+				});
+				break;
+			}
+
+			case 'accessprofile': {
+				const composition = this.getAccessItemComposition(gr_ritm.variables.isc_access_item.sailpoint_id.toString(), 'accessprofile');
+				for (const entitlement of composition.entitlements) {
+					accessItemRefs.push(entitlement);
+				}
+				break;
+			}
+
+			case 'role': {
+				const composition = this.getAccessItemComposition(gr_ritm.variables.isc_access_item.sailpoint_id.toString(), 'role');
+				for (const entitlement of composition.entitlements) {
+					accessItemRefs.push(entitlement);
+				}
+				for (const accessprofile of composition.accessProfiles) {
+					const ap_composition = this.getAccessItemComposition(accessprofile.id, 'accessprofile');
+					for (const entitlement of ap_composition.entitlements) {
+						accessItemRefs.push(entitlement);
+					}
+				}
+				break;
+			}
+		}
+		//gs.info(JSON.stringify(accessItemRefs));
+		const access_token = this.getToken();
+		const rm_sod_violations = new sn_ws.RESTMessageV2('SailPoint ISC', 'sod-violations-predict');
+		rm_sod_violations.setStringParameterNoEscape('tenant', gs.getProperty('x_xal_idconnect.isc_tenant'));
+		rm_sod_violations.setStringParameterNoEscape('domain', gs.getProperty('x_xal_idconnect.domain'));
+		rm_sod_violations.setRequestHeader('Authorization', 'Bearer ' + access_token);
+		rm_sod_violations.setRequestBody(JSON.stringify({
+			"identityId": gr_ritm.variables.identity_id.toString(),
+			"accessRefs": accessItemRefs
+		}));
+
+		const res_sod_violations = rm_sod_violations.execute();
+		return JSON.parse(res_sod_violations.getBody());
+
+	},
+	getAccessItemComposition: function (accessItemId, accessItemType) {
+		const access_token = this.getToken();
+		const rm_access_item = new sn_ws.RESTMessageV2('SailPoint ISC', `${accessItemType}-get`);
+		rm_access_item.setStringParameterNoEscape('tenant', gs.getProperty('x_xal_idconnect.isc_tenant'));
+		rm_access_item.setStringParameterNoEscape('domain', gs.getProperty('x_xal_idconnect.domain'));
+		rm_access_item.setStringParameterNoEscape('id', accessItemId);
+		rm_access_item.setRequestHeader('Authorization', 'Bearer ' + access_token);
+
+		const res_access_item = rm_access_item.execute();
+
+		return JSON.parse(res_access_item.getBody());
+	},
+
+	/////////////////////////////////
+	////BEGIN CyberArk functions/////
+	/////////////////////////////////
+
+	cya_scim_get: function (resource, query_params) {
+		const access_token = this.getToken('cya');
+		const rm_scim = new sn_ws.RESTMessageV2('CyberArk Identity', `${resource}-list`);
+		rm_scim.setStringParameterNoEscape('tenant_url', gs.getProperty('x_xal_idconnect.cya_tenant'));
+		rm_scim.setRequestHeader('Authorization', 'Bearer ' + access_token);
+
+		if (query_params) {
+			query_params
+				.split('&')
+				.map(pair => pair.split('='))
+				.forEach(([key, value]) => {
+					if (key && value !== undefined) {
+						rm_scim.setQueryParameter(key, value);
+					}
+				});
+		}
+
+		return rm_scim.execute();
+	},
+
+	cya_scim_post: function (resource, request_body) {
+		const access_token = this.getToken('cya');
+		const rm_scim = new sn_ws.RESTMessageV2('CyberArk Identity', `${resource}-create`);
+		rm_scim.setStringParameterNoEscape('tenant_url', gs.getProperty('x_xal_idconnect.cya_tenant'));
+		rm_scim.setRequestBody(JSON.stringify(request_body));
+		rm_scim.setRequestHeader('Authorization', 'Bearer ' + access_token);
+
+		return rm_scim.execute();
+	},
+
+	type: 'XalientUtilitiesCatalogItem'
+});]]></script>
+        <sys_class_name>sys_script_include</sys_class_name>
+        <sys_created_by>mark.cheek</sys_created_by>
+        <sys_created_on>2025-05-13 15:52:37</sys_created_on>
+        <sys_id>245e13a093e16a10a06d7b018bba101f</sys_id>
+        <sys_mod_count>76</sys_mod_count>
+        <sys_name>XalientUtilitiesCatalogItem</sys_name>
+        <sys_package display_value="Xalient Identity Connect" source="x_xal_idconnect">14a34acb93556210a06d7b018bba10ef</sys_package>
+        <sys_policy>read</sys_policy>
+        <sys_scope display_value="Xalient Identity Connect">14a34acb93556210a06d7b018bba10ef</sys_scope>
+        <sys_update_name>sys_script_include_245e13a093e16a10a06d7b018bba101f</sys_update_name>
+        <sys_updated_by>mark.cheek@xalient.com</sys_updated_by>
+        <sys_updated_on>2026-03-11 15:56:12</sys_updated_on>
+    </sys_script_include>
+    <sys_es_latest_script action="INSERT_OR_UPDATE">
+        <id>245e13a093e16a10a06d7b018bba101f</id>
+        <sys_created_by>mark.cheek@xalient.com</sys_created_by>
+        <sys_created_on>2025-06-04 14:34:58</sys_created_on>
+        <sys_id>b78fd0bb1bf9621444165391604bcb54</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>mark.cheek@xalient.com</sys_updated_by>
+        <sys_updated_on>2025-06-04 14:34:58</sys_updated_on>
+        <table>sys_script_include</table>
+        <use_es_latest>true</use_es_latest>
+    </sys_es_latest_script>
+</record_update>

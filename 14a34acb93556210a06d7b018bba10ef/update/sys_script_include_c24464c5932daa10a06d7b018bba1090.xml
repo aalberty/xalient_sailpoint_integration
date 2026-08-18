@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script_include">
+    <sys_script_include action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <active>true</active>
+        <api_name>x_xal_idconnect.XalientGlideAjaxHelper</api_name>
+        <caller_access>2</caller_access>
+        <client_callable>true</client_callable>
+        <description/>
+        <mobile_callable>false</mobile_callable>
+        <name>XalientGlideAjaxHelper</name>
+        <sandbox_callable>false</sandbox_callable>
+        <script><![CDATA[var XalientGlideAjaxHelper = Class.create();
+XalientGlideAjaxHelper.prototype = Object.extendsObject(global.AbstractAjaxProcessor, {
+
+	getToken: function () {
+		const rm_token = new sn_ws.RESTMessageV2('SailPoint ISC', 'access-token-get');
+		rm_token.setStringParameterNoEscape('tenant', gs.getProperty('x_xal_idconnect.isc_tenant'));
+		rm_token.setStringParameterNoEscape('domain', gs.getProperty('x_xal_idconnect.domain'));
+		rm_token.setStringParameterNoEscape('client_id', gs.getProperty('x_xal_idconnect.isc_client_id'));
+		rm_token.setStringParameterNoEscape('client_secret', gs.getProperty('x_xal_idconnect.isc_client_secret'));
+
+		const res_token = rm_token.execute();
+		const resb_token = JSON.parse(res_token.getBody());
+
+		return resb_token.access_token;
+	},
+
+	getIdentity: function () {
+		const filter = this.getParameter('sysparm_filter');
+		const access_token = this.getToken();
+
+		const rm_identity = new sn_ws.RESTMessageV2('SailPoint ISC', 'identities-list');
+		rm_identity.setStringParameterNoEscape('tenant', gs.getProperty('x_xal_idconnect.isc_tenant'));
+		rm_identity.setStringParameterNoEscape('domain', gs.getProperty('x_xal_idconnect.domain'));
+		rm_identity.setRequestHeader('Authorization', 'Bearer ' + access_token);
+
+		if (filter) {
+			rm_identity.setQueryParameter('filters', filter);
+		}
+
+		const res_identity = rm_identity.execute();
+
+		return res_identity.getBody();
+	},
+
+	clientFormConfig: function () {
+		const cat_item_id = this.getParameter('sysparm_cat_item');
+
+		const gr_config = new GlideRecord('x_xal_idconnect_catalog_item_config');
+		gr_config.get('catalog_item', cat_item_id);
+
+		return JSON.stringify({
+			"business_applications": gr_config.getValue('business_applications'),
+			"access_item_picker": gr_config.getValue('access_item_picker')
+		});
+	},
+	setRequestedFor: function () {
+		const requestedFor = this.getParameter('sysparm_requested_for');
+		const itemId = this.getParameter('sysparm_item_id');
+		gs.info(`XalientGlideAjaxHelper().setRequestedFor() - value for requestedFor is ${requestedFor} - value for itemId is ${itemId}`);
+		if (!requestedFor || !itemId) return;
+
+
+		var ritm = new GlideRecord('sc_req_item');
+		if (ritm.get(itemId)) {
+			ritm.requested_for = requestedFor;
+			ritm.update();
+
+			var req = new GlideRecord('sc_request');
+			if (req.get(ritm.request)) {
+				req.requested_for = requestedFor;
+				req.update();
+			}
+		}
+
+
+	},
+
+	type: 'XalientGlideAjaxHelper'
+});]]></script>
+        <sys_class_name>sys_script_include</sys_class_name>
+        <sys_created_by>mark.cheek</sys_created_by>
+        <sys_created_on>2025-05-14 15:37:01</sys_created_on>
+        <sys_id>c24464c5932daa10a06d7b018bba1090</sys_id>
+        <sys_mod_count>12</sys_mod_count>
+        <sys_name>XalientGlideAjaxHelper</sys_name>
+        <sys_package display_value="Xalient Identity Connect" source="x_xal_idconnect">14a34acb93556210a06d7b018bba10ef</sys_package>
+        <sys_policy>read</sys_policy>
+        <sys_scope display_value="Xalient Identity Connect">14a34acb93556210a06d7b018bba10ef</sys_scope>
+        <sys_update_name>sys_script_include_c24464c5932daa10a06d7b018bba1090</sys_update_name>
+        <sys_updated_by>mark.cheek@xalient.com</sys_updated_by>
+        <sys_updated_on>2025-07-10 18:09:47</sys_updated_on>
+    </sys_script_include>
+    <sys_es_latest_script action="INSERT_OR_UPDATE">
+        <id>c24464c5932daa10a06d7b018bba1090</id>
+        <sys_created_by>mark.cheek@xalient.com</sys_created_by>
+        <sys_created_on>2025-06-04 14:33:37</sys_created_on>
+        <sys_id>004fd0bb1bf9621444165391604bcb00</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>mark.cheek@xalient.com</sys_updated_by>
+        <sys_updated_on>2025-06-04 14:33:37</sys_updated_on>
+        <table>sys_script_include</table>
+        <use_es_latest>true</use_es_latest>
+    </sys_es_latest_script>
+</record_update>

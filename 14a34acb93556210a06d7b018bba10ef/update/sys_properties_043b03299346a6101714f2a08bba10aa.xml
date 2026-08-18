@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_properties">
+    <sys_properties action="INSERT_OR_UPDATE">
+        <choices/>
+        <description>Maximum number of provisioning status checks</description>
+        <ignore_cache>true</ignore_cache>
+        <is_private>false</is_private>
+        <name>x_xal_idconnect.max_status_checks</name>
+        <read_roles/>
+        <suffix>max_status_checks</suffix>
+        <sys_class_name>sys_properties</sys_class_name>
+        <sys_created_by>mark.cheek@xalient.com</sys_created_by>
+        <sys_created_on>2025-06-10 13:34:27</sys_created_on>
+        <sys_id>043b03299346a6101714f2a08bba10aa</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name>x_xal_idconnect.max_status_checks</sys_name>
+        <sys_package display_value="Xalient Identity Connect" source="x_xal_idconnect">14a34acb93556210a06d7b018bba10ef</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Xalient Identity Connect">14a34acb93556210a06d7b018bba10ef</sys_scope>
+        <sys_update_name>sys_properties_043b03299346a6101714f2a08bba10aa</sys_update_name>
+        <sys_updated_by>mark.cheek@xalient.com</sys_updated_by>
+        <sys_updated_on>2025-07-02 12:38:34</sys_updated_on>
+        <type>integer</type>
+        <value>5</value>
+        <write_roles/>
+    </sys_properties>
+    <sys_translated_text action="delete_multiple" query="documentkey=043b03299346a6101714f2a08bba10aa"/>
+</record_update>

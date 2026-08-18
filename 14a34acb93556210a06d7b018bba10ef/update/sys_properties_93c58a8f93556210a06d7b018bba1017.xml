@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_properties">
+    <sys_properties action="INSERT_OR_UPDATE">
+        <choices/>
+        <description>Client Secret</description>
+        <ignore_cache>true</ignore_cache>
+        <is_private>false</is_private>
+        <name>x_xal_idconnect.isc_client_secret</name>
+        <read_roles/>
+        <suffix>isc_client_secret</suffix>
+        <sys_class_name>sys_properties</sys_class_name>
+        <sys_created_by>mark.cheek</sys_created_by>
+        <sys_created_on>2025-05-08 17:34:50</sys_created_on>
+        <sys_id>93c58a8f93556210a06d7b018bba1017</sys_id>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_name>x_xal_idconnect.isc_client_secret</sys_name>
+        <sys_package display_value="Xalient Identity Connect" source="x_xal_idconnect">14a34acb93556210a06d7b018bba10ef</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Xalient Identity Connect">14a34acb93556210a06d7b018bba10ef</sys_scope>
+        <sys_update_name>sys_properties_93c58a8f93556210a06d7b018bba1017</sys_update_name>
+        <sys_updated_by>mark.cheek@xalient.com</sys_updated_by>
+        <sys_updated_on>2026-01-23 18:30:04</sys_updated_on>
+        <type>password2</type>
+        <value>{{dflt-gpaes}}SOZ0RBPPQ5ZXoeGNWyPorQ8tOrQTVA4GoQoBRnLargeCqedhJRllA8Bt/r7Ul2QQC7C41Wtxs/Dp&#13;
+CxuufCbkjr/FIGnRv1vuGjOvzob2Pmc=</value>
+        <write_roles/>
+    </sys_properties>
+    <sys_translated_text action="delete_multiple" query="documentkey=93c58a8f93556210a06d7b018bba1017"/>
+</record_update>

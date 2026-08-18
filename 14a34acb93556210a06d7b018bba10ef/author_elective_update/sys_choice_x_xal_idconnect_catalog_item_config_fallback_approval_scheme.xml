@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_choice action="INSERT_OR_UPDATE" field="fallback_approval_scheme" table="x_xal_idconnect_catalog_item_config" version="3">
+        <sys_choice_set action="INSERT_OR_UPDATE">
+            <element>fallback_approval_scheme</element>
+            <name>x_xal_idconnect_catalog_item_config</name>
+            <sys_class_name>sys_choice_set</sys_class_name>
+            <sys_created_by>mark.cheek@xalient.com</sys_created_by>
+            <sys_created_on>2025-06-10 13:16:55</sys_created_on>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>fallback_approval_scheme</sys_name>
+            <sys_package display_value="Xalient Identity Connect" source="x_xal_idconnect">14a34acb93556210a06d7b018bba10ef</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Xalient Identity Connect">14a34acb93556210a06d7b018bba10ef</sys_scope>
+            <sys_update_name>sys_choice_x_xal_idconnect_catalog_item_config_fallback_approval_scheme</sys_update_name>
+            <sys_updated_by>mark.cheek@xalient.com</sys_updated_by>
+            <sys_updated_on>2025-06-10 13:16:55</sys_updated_on>
+        </sys_choice_set>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>fallback_approval_scheme</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Manager Only</label>
+            <language>en</language>
+            <name>x_xal_idconnect_catalog_item_config</name>
+            <sequence>100</sequence>
+            <synonyms/>
+            <sys_created_by>mark.cheek@xalient.com</sys_created_by>
+            <sys_created_on>2025-06-10 13:16:55</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>mark.cheek@xalient.com</sys_updated_by>
+            <sys_updated_on>2025-06-10 13:16:55</sys_updated_on>
+            <value>manager_only</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>fallback_approval_scheme</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Access Item Owner Only</label>
+            <language>en</language>
+            <name>x_xal_idconnect_catalog_item_config</name>
+            <sequence>200</sequence>
+            <synonyms/>
+            <sys_created_by>mark.cheek@xalient.com</sys_created_by>
+            <sys_created_on>2025-06-10 13:17:16</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>mark.cheek@xalient.com</sys_updated_by>
+            <sys_updated_on>2025-06-10 13:17:16</sys_updated_on>
+            <value>access_item_owner_only</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>fallback_approval_scheme</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Manager then Access Item Owner</label>
+            <language>en</language>
+            <name>x_xal_idconnect_catalog_item_config</name>
+            <sequence>300</sequence>
+            <synonyms/>
+            <sys_created_by>mark.cheek@xalient.com</sys_created_by>
+            <sys_created_on>2025-06-10 13:17:35</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>mark.cheek@xalient.com</sys_updated_by>
+            <sys_updated_on>2025-06-10 13:17:35</sys_updated_on>
+            <value>manager_then_access_item_owner</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>fallback_approval_scheme</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>No Approval Required</label>
+            <language>en</language>
+            <name>x_xal_idconnect_catalog_item_config</name>
+            <sequence>400</sequence>
+            <synonyms/>
+            <sys_created_by>mark.cheek@xalient.com</sys_created_by>
+            <sys_created_on>2025-06-10 13:17:52</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>mark.cheek@xalient.com</sys_updated_by>
+            <sys_updated_on>2025-06-10 13:17:52</sys_updated_on>
+            <value>no_approval_required</value>
+        </sys_choice>
+    </sys_choice>
+</record_update>

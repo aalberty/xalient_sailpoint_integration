@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="question_choice">
+    <question_choice action="INSERT_OR_UPDATE">
+        <inactive>false</inactive>
+        <misc>0</misc>
+        <order>100</order>
+        <published_ref/>
+        <question display_value="Select an optional filter">723f132493e16a10a06d7b018bba1040</question>
+        <rec_misc>0</rec_misc>
+        <sys_class_name>question_choice</sys_class_name>
+        <sys_created_by>mark.cheek</sys_created_by>
+        <sys_created_on>2025-05-13 15:59:38</sys_created_on>
+        <sys_id>0cefd3a493e16a10a06d7b018bba103f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Show access items tied to a specific application</sys_name>
+        <sys_package display_value="Xalient Identity Connect" source="x_xal_idconnect">14a34acb93556210a06d7b018bba10ef</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Xalient Identity Connect">14a34acb93556210a06d7b018bba10ef</sys_scope>
+        <sys_update_name>question_choice_0cefd3a493e16a10a06d7b018bba103f</sys_update_name>
+        <sys_updated_by>mark.cheek</sys_updated_by>
+        <sys_updated_on>2025-05-13 15:59:38</sys_updated_on>
+        <text>Show access items tied to a specific application</text>
+        <value>application</value>
+    </question_choice>
+    <fx_price action="delete_multiple" query="id=0cefd3a493e16a10a06d7b018bba103f"/>
+    <fx_price action="INSERT_OR_UPDATE">
+        <amount>0</amount>
+        <currency display_value="USD">USD</currency>
+        <field>misc</field>
+        <id>0cefd3a493e16a10a06d7b018bba103f</id>
+        <parent/>
+        <reference_amount>0</reference_amount>
+        <reference_currency display_value="USD">USD</reference_currency>
+        <sys_created_by>mark.cheek</sys_created_by>
+        <sys_created_on>2025-05-13 15:59:38</sys_created_on>
+        <sys_id>65ffdf6493e16a10a06d7b018bba1070</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>mark.cheek</sys_updated_by>
+        <sys_updated_on>2025-05-13 15:59:38</sys_updated_on>
+        <table>question_choice</table>
+        <type>calculated</type>
+    </fx_price>
+    <fx_price action="INSERT_OR_UPDATE">
+        <amount>0</amount>
+        <currency display_value="USD">USD</currency>
+        <field>rec_misc</field>
+        <id>0cefd3a493e16a10a06d7b018bba103f</id>
+        <parent/>
+        <reference_amount>0</reference_amount>
+        <reference_currency display_value="USD">USD</reference_currency>
+        <sys_created_by>mark.cheek</sys_created_by>
+        <sys_created_on>2025-05-13 15:59:38</sys_created_on>
+        <sys_id>2dffdf6493e16a10a06d7b018bba106f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>mark.cheek</sys_updated_by>
+        <sys_updated_on>2025-05-13 15:59:38</sys_updated_on>
+        <table>question_choice</table>
+        <type>calculated</type>
+    </fx_price>
+</record_update>

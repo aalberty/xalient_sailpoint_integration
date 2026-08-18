@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ws_operation">
+    <sys_ws_operation action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <consumes>application/json,application/xml,text/xml</consumes>
+        <consumes_customized>false</consumes_customized>
+        <default_operation_uri/>
+        <enforce_acl>cf9d01d3e73003009d6247e603f6a990</enforce_acl>
+        <http_method>POST</http_method>
+        <name>incident_management</name>
+        <operation_script><![CDATA[(function process(/*RESTAPIRequest*/ request, /*RESTAPIResponse*/ response) {
+
+	const request_body = request.body.data;
+    gs.info('isc_webhook/incident_management - Request Received - Request Body\r\n\r\n' + JSON.stringify(request_body));
+	
+	const gr_incident = new GlideRecord('incident');
+	gr_incident.initialize();
+	gr_incident.assignment_group = get_assignment_group_id();
+	gr_incident.contact_type = 'monitoring';
+	gr_incident.description = JSON.stringify(request_body,null,2);
+	
+
+	switch(request_body._metadata.triggerId){
+		case 'idn:account-aggregation-completed':
+			gr_incident.short_description = 'SailPoint Account Aggregation Failure - ' + request_body.source.name;
+		break;
+		case 'idn:post-provisioning':
+			gr_incident.short_description = 'SailPoint Provisioning Issue - ' + request_body.recipient.name;
+		break;
+	}
+
+	const res_inc = gr_incident.insert();
+
+	function get_assignment_group_id(){
+		const gr_group = new GlideRecord('sys_user_group');
+		gr_group.get('name',gs.getProperty('x_xal_idconnect.incident_assignment_group'));
+		
+		return gr_group.sys_id.toString();
+	}
+
+})(request, response);]]></operation_script>
+        <operation_uri>/api/x_xal_idconnect/isc_webhook/incident_management</operation_uri>
+        <produces>application/json,application/xml,text/xml</produces>
+        <produces_customized>false</produces_customized>
+        <relative_path>/incident_management</relative_path>
+        <request_example/>
+        <requires_acl_authorization>true</requires_acl_authorization>
+        <requires_authentication>true</requires_authentication>
+        <requires_snc_internal_role>true</requires_snc_internal_role>
+        <short_description/>
+        <sys_class_name>sys_ws_operation</sys_class_name>
+        <sys_created_by>mark.cheek</sys_created_by>
+        <sys_created_on>2025-05-09 18:14:08</sys_created_on>
+        <sys_id>50581f1f93dda210a06d7b018bba1078</sys_id>
+        <sys_mod_count>6</sys_mod_count>
+        <sys_name>incident_management</sys_name>
+        <sys_package display_value="Xalient Identity Connect" source="x_xal_idconnect">14a34acb93556210a06d7b018bba10ef</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Xalient Identity Connect">14a34acb93556210a06d7b018bba10ef</sys_scope>
+        <sys_update_name>sys_ws_operation_50581f1f93dda210a06d7b018bba1078</sys_update_name>
+        <sys_updated_by>mark.cheek</sys_updated_by>
+        <sys_updated_on>2025-05-12 14:20:25</sys_updated_on>
+        <web_service_definition display_value="ISC Webhook">e3d79b1f93dda210a06d7b018bba10dc</web_service_definition>
+        <web_service_version/>
+    </sys_ws_operation>
+</record_update>

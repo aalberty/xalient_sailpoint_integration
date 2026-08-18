@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="catalog_ui_policy_action">
+    <catalog_ui_policy_action action="INSERT_OR_UPDATE">
+        <catalog_item display_value="Access Item Ownership Change">cf4d5ba093e16a10a06d7b018bba10a7</catalog_item>
+        <catalog_variable>IO:f021abe493e16a10a06d7b018bba1096</catalog_variable>
+        <cleared>false</cleared>
+        <disabled>ignore</disabled>
+        <field/>
+        <field_message/>
+        <field_message_type>none</field_message_type>
+        <mandatory>true</mandatory>
+        <order>100</order>
+        <sys_class_name>catalog_ui_policy_action</sys_class_name>
+        <sys_created_by>mark.cheek</sys_created_by>
+        <sys_created_on>2025-05-13 16:11:26</sys_created_on>
+        <sys_id>16a2af6893e16a10a06d7b018bba103c</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>application</sys_name>
+        <sys_package display_value="Xalient Identity Connect" source="x_xal_idconnect">14a34acb93556210a06d7b018bba10ef</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Xalient Identity Connect">14a34acb93556210a06d7b018bba10ef</sys_scope>
+        <sys_update_name>catalog_ui_policy_action_16a2af6893e16a10a06d7b018bba103c</sys_update_name>
+        <sys_updated_by>mark.cheek</sys_updated_by>
+        <sys_updated_on>2025-05-13 16:11:42</sys_updated_on>
+        <table/>
+        <ui_policy display_value="Show application filter">1aa2af6893e16a10a06d7b018bba102e</ui_policy>
+        <value/>
+        <value_action>clear_value</value_action>
+        <variable>application</variable>
+        <variable_set/>
+        <visible>true</visible>
+    </catalog_ui_policy_action>
+</record_update>

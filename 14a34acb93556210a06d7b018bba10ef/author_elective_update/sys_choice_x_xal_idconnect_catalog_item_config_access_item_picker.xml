@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_choice action="INSERT_OR_UPDATE" field="access_item_picker" table="x_xal_idconnect_catalog_item_config" version="3">
+        <sys_choice_set action="INSERT_OR_UPDATE">
+            <element>access_item_picker</element>
+            <name>x_xal_idconnect_catalog_item_config</name>
+            <sys_class_name>sys_choice_set</sys_class_name>
+            <sys_created_by>mark.cheek</sys_created_by>
+            <sys_created_on>2025-05-21 00:42:23</sys_created_on>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>access_item_picker</sys_name>
+            <sys_package display_value="Xalient Identity Connect" source="x_xal_idconnect">14a34acb93556210a06d7b018bba10ef</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Xalient Identity Connect">14a34acb93556210a06d7b018bba10ef</sys_scope>
+            <sys_update_name>sys_choice_x_xal_idconnect_catalog_item_config_access_item_picker</sys_update_name>
+            <sys_updated_by>mark.cheek</sys_updated_by>
+            <sys_updated_on>2025-05-21 00:42:23</sys_updated_on>
+        </sys_choice_set>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>access_item_picker</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Single</label>
+            <language>en</language>
+            <name>x_xal_idconnect_catalog_item_config</name>
+            <sequence>0</sequence>
+            <synonyms/>
+            <sys_created_by>mark.cheek</sys_created_by>
+            <sys_created_on>2025-05-21 00:42:23</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>mark.cheek</sys_updated_by>
+            <sys_updated_on>2025-05-21 00:42:23</sys_updated_on>
+            <value>single</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>access_item_picker</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Multiple</label>
+            <language>en</language>
+            <name>x_xal_idconnect_catalog_item_config</name>
+            <sequence>1</sequence>
+            <synonyms/>
+            <sys_created_by>mark.cheek</sys_created_by>
+            <sys_created_on>2025-05-21 00:42:23</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>mark.cheek</sys_updated_by>
+            <sys_updated_on>2025-05-21 00:42:23</sys_updated_on>
+            <value>multiple</value>
+        </sys_choice>
+    </sys_choice>
+</record_update>

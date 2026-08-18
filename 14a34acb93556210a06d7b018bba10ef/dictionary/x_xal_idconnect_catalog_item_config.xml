@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element db_object_id="0e1815c3936d2650a06d7b018bba10aa" label="Catalog Item Config" max_length="40" name="x_xal_idconnect_catalog_item_config" type="collection">
+        <element attributes="edge_encryption_enabled=true,encode_utf8=false" label="Catalog Item" max_length="32" name="catalog_item" reference="sc_cat_item" type="reference"/>
+        <element attributes="edge_encryption_enabled=true" choice="1" label="Access Item Picker" max_length="40" name="access_item_picker" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Multiple" sequence="1" value="multiple"/>
+                <element inactive_on_update="false" label="Single" sequence="0" value="single"/>
+            </choice>
+        </element>
+        <element attributes="edge_encryption_enabled=true,no_sort=true,slushbucket_ref_no_expand=true" label="Business Applications" max_length="1024" name="business_applications" reference="cmdb_ci_business_app" type="glide_list"/>
+        <element display="true" label="Name" max_length="255" name="name" read_only="true" type="string"/>
+        <element attributes="edge_encryption_enabled=true" choice="1" label="Fallback Approval Scheme" max_length="40" name="fallback_approval_scheme" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Manager Only" sequence="100" value="manager_only"/>
+                <element inactive_on_update="false" label="Access Item Owner Only" sequence="200" value="access_item_owner_only"/>
+                <element inactive_on_update="false" label="No Approval Required" sequence="400" value="no_approval_required"/>
+                <element inactive_on_update="false" label="Manager then Access Item Owner" sequence="300" value="manager_then_access_item_owner"/>
+            </choice>
+        </element>
+        <element label="Provisioning Tasks" max_length="4000" name="provisioning_tasks" reference="x_xal_idconnect_catalog_item_tasks" type="glide_list"/>
+        <element attributes="edge_encryption_enabled=true" label="Show Application Filter" max_length="40" name="show_application_filter" type="boolean"/>
+        <element attributes="edge_encryption_enabled=true" choice="1" label="Approval Scheme" max_length="40" name="approval_scheme" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Manager then Access Item Owner" sequence="300" value="manager_then_access_item_owner"/>
+                <element inactive_on_update="false" label="Use Access Item Scheme" sequence="400" value="use_access_item_scheme"/>
+                <element inactive_on_update="false" label="Access Item Owner Only" sequence="200" value="access_item_owner_only"/>
+                <element inactive_on_update="false" label="Manager Only" sequence="100" value="manager_only"/>
+                <element inactive_on_update="false" label="No Approval Required" sequence="500" value="no_approval_required"/>
+            </choice>
+        </element>
+        <index name="index">
+            <element name="catalog_item"/>
+        </index>
+    </element>
+</database>

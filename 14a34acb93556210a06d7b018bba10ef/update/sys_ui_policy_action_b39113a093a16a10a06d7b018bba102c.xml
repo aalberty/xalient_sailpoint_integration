@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ui_policy_action">
+    <sys_ui_policy_action action="INSERT_OR_UPDATE">
+        <cleared>false</cleared>
+        <disabled>ignore</disabled>
+        <field>sailpoint_source_entitlement_type</field>
+        <field_message/>
+        <field_message_type>none</field_message_type>
+        <mandatory>ignore</mandatory>
+        <sys_class_name>sys_ui_policy_action</sys_class_name>
+        <sys_created_by>mark.cheek</sys_created_by>
+        <sys_created_on>2025-05-13 14:57:04</sys_created_on>
+        <sys_id>b39113a093a16a10a06d7b018bba102c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>sailpoint_source_entitlement_type</sys_name>
+        <sys_package display_value="Xalient Identity Connect" source="x_xal_idconnect">14a34acb93556210a06d7b018bba10ef</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Xalient Identity Connect">14a34acb93556210a06d7b018bba10ef</sys_scope>
+        <sys_update_name>sys_ui_policy_action_b39113a093a16a10a06d7b018bba102c</sys_update_name>
+        <sys_updated_by>mark.cheek</sys_updated_by>
+        <sys_updated_on>2025-05-13 14:57:04</sys_updated_on>
+        <table>x_xal_idconnect_isc_access_item</table>
+        <ui_policy display_value="Show Entitlement Fields">f9311f6093a16a10a06d7b018bba10b0</ui_policy>
+        <value/>
+        <value_action>ignore</value_action>
+        <visible>true</visible>
+    </sys_ui_policy_action>
+</record_update>

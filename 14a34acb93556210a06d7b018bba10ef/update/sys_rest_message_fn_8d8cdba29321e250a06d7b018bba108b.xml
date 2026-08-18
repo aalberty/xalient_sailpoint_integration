@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_rest_message_fn">
+    <sys_rest_message_fn action="INSERT_OR_UPDATE">
+        <authentication_type>inherit_from_parent</authentication_type>
+        <basic_auth_password/>
+        <basic_auth_profile/>
+        <basic_auth_user/>
+        <content>[&#13;
+    {&#13;
+        "op": "replace",&#13;
+        "path": "/owner",&#13;
+        "value": {&#13;
+            "type": "IDENTITY",&#13;
+            "id": "${identity_id}"&#13;
+        }&#13;
+    }&#13;
+]</content>
+        <function_name>role-patch</function_name>
+        <http_method>patch</http_method>
+        <lock>false</lock>
+        <oauth2_profile/>
+        <protocol_name/>
+        <qualified_name>SailPoint ISC [ role-patch ]</qualified_name>
+        <rest_endpoint>https://${tenant}.api.${domain}/v3/roles/${role_id}</rest_endpoint>
+        <rest_message display_value="SailPoint ISC">9af3c20f93556210a06d7b018bba10a9</rest_message>
+        <sys_class_name>sys_rest_message_fn</sys_class_name>
+        <sys_created_by>mark.cheek</sys_created_by>
+        <sys_created_on>2025-05-19 20:52:26</sys_created_on>
+        <sys_id>8d8cdba29321e250a06d7b018bba108b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>role-patch</sys_name>
+        <sys_package display_value="Xalient Identity Connect" source="x_xal_idconnect">14a34acb93556210a06d7b018bba10ef</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Xalient Identity Connect">14a34acb93556210a06d7b018bba10ef</sys_scope>
+        <sys_update_name>sys_rest_message_fn_8d8cdba29321e250a06d7b018bba108b</sys_update_name>
+        <sys_updated_by>mark.cheek</sys_updated_by>
+        <sys_updated_on>2025-05-19 20:52:26</sys_updated_on>
+        <use_basic_auth>false</use_basic_auth>
+        <use_mid_server/>
+        <use_mutual_auth>false</use_mutual_auth>
+    </sys_rest_message_fn>
+</record_update>

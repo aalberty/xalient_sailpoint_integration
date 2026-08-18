@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ws_operation">
+    <sys_ws_operation action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <consumes>application/json,application/xml,text/xml</consumes>
+        <consumes_customized>false</consumes_customized>
+        <default_operation_uri/>
+        <enforce_acl/>
+        <http_method>POST</http_method>
+        <name>update_ritm_variables</name>
+        <operation_script><![CDATA[(function process(/*RESTAPIRequest*/ request, /*RESTAPIResponse*/ response) {
+
+    const request_body = request.body.data;
+    gs.info('isc_webhook/update_ritm_variables - Request Received - Request Body\r\n\r\n' + JSON.stringify(request_body));
+
+	const gr_ritm = new GlideRecord('sc_req_item');
+	if(request_body.request_id){
+		gr_ritm.get('request',request_body.request_id);
+	}
+
+	for(const [key,value] of Object.entries(request_body.variables)){
+		gr_ritm.variables[key] = value;
+	}
+	gr_ritm.update();
+
+})(request, response);]]></operation_script>
+        <operation_uri>/api/x_xal_idconnect/isc_webhook/update_ritm_variables</operation_uri>
+        <produces>application/json,application/xml,text/xml</produces>
+        <produces_customized>false</produces_customized>
+        <relative_path>/update_ritm_variables</relative_path>
+        <request_example/>
+        <requires_acl_authorization>true</requires_acl_authorization>
+        <requires_authentication>true</requires_authentication>
+        <requires_snc_internal_role>true</requires_snc_internal_role>
+        <short_description/>
+        <sys_class_name>sys_ws_operation</sys_class_name>
+        <sys_created_by>mark.cheek@xalient.com</sys_created_by>
+        <sys_created_on>2025-12-30 15:08:38</sys_created_on>
+        <sys_id>397bb4cf1b86b2d044165391604bcbc8</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name>update_ritm_variables</sys_name>
+        <sys_package display_value="Xalient Identity Connect" source="x_xal_idconnect">14a34acb93556210a06d7b018bba10ef</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Xalient Identity Connect">14a34acb93556210a06d7b018bba10ef</sys_scope>
+        <sys_update_name>sys_ws_operation_397bb4cf1b86b2d044165391604bcbc8</sys_update_name>
+        <sys_updated_by>mark.cheek@xalient.com</sys_updated_by>
+        <sys_updated_on>2025-12-30 15:16:45</sys_updated_on>
+        <web_service_definition display_value="ISC Webhook">e3d79b1f93dda210a06d7b018bba10dc</web_service_definition>
+        <web_service_version/>
+    </sys_ws_operation>
+</record_update>

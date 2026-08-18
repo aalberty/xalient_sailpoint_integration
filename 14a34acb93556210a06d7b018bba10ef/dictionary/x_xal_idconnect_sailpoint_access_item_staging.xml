@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element db_object_id="6bb1c72c93216a10a06d7b018bba10ef" extends="sys_import_set_row" label="SailPoint Access Item Staging" max_length="40" name="x_xal_idconnect_sailpoint_access_item_staging" type="collection">
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=privileged" label="privileged" max_length="40" name="u_privileged" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=active" label="active" max_length="40" name="u_active" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=sailpoint_object_type" label="sailpoint_object_type" max_length="40" name="u_sailpoint_object_type" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=sailpoint_source_entitlement_subtype" label="sailpoint_source_entitlement_subtype" max_length="255" name="u_sailpoint_so_lement_subtype" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=owner" label="owner" max_length="40" name="u_owner" reference="sys_user" type="reference"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=sailpoint_source_id" label="sailpoint_source_id" max_length="255" name="u_sailpoint_source_id" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=sailpoint_source_name" label="sailpoint_source_name" max_length="255" name="u_sailpoint_source_name" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=name" label="name" max_length="90" name="u_name" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=sailpoint_id" label="sailpoint_id" max_length="255" name="u_sailpoint_id" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=sailpoint_entitlement_value" label="sailpoint_entitlement_value" max_length="255" name="u_sailpoint_entitlement_value" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=sailpoint_source_entitlement_type" label="sailpoint_source_entitlement_type" max_length="255" name="u_sailpoint_so_titlement_type" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=description" label="description" max_length="1000" name="u_description" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=requestable" label="requestable" max_length="40" name="u_requestable" type="string"/>
+        <index name="index">
+            <element name="u_owner"/>
+        </index>
+    </element>
+</database>

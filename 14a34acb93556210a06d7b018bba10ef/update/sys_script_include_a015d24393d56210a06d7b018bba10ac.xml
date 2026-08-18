@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script_include">
+    <sys_script_include action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <active>true</active>
+        <api_name>x_xal_idconnect.XalientUtilitiesCore</api_name>
+        <caller_access>1</caller_access>
+        <client_callable>false</client_callable>
+        <description/>
+        <mobile_callable>false</mobile_callable>
+        <name>XalientUtilitiesCore</name>
+        <sandbox_callable>false</sandbox_callable>
+        <script><![CDATA[var XalientUtilitiesCore = Class.create();
+XalientUtilitiesCore.prototype = {
+    initialize: function() {},
+    getToken: function(app) {
+        if (app == 'cya') {
+            const rm_token = new sn_ws.RESTMessageV2('CyberArk Identity', 'authentication-access-token');
+            rm_token.setStringParameterNoEscape('tenant_url', gs.getProperty('x_xal_idconnect.cya_tenant'));
+			rm_token.setStringParameterNoEscape('oauth_app_id', gs.getProperty('x_xal_idconnect.cya_oauth_application'));
+
+            const params = {
+                'client_id': gs.getProperty('x_xal_idconnect.cya_client_id'),
+                'client_secret': gs.getProperty('x_xal_idconnect.cya_client_secret'),
+                'scope': gs.getProperty('x_xal_idconnect.cya_oauth_scopes'),
+				'grant_type': 'client_credentials'
+            };
+
+            let urlEncodedParams = Object.keys(params)
+                .map(key => encodeURIComponent(key) + '=' + encodeURIComponent(params[key]))
+                .join('&');
+			rm_token.setRequestBody(urlEncodedParams);
+
+            const res_token = rm_token.execute();
+            const resb_token = JSON.parse(res_token.getBody());
+
+            return resb_token.access_token;
+        }
+
+        //if (app == 'isc') {
+        const rm_token = new sn_ws.RESTMessageV2('SailPoint ISC', 'access-token-get');
+        rm_token.setStringParameterNoEscape('tenant', gs.getProperty('x_xal_idconnect.isc_tenant'));
+        rm_token.setStringParameterNoEscape('domain', gs.getProperty('x_xal_idconnect.domain'));
+        rm_token.setStringParameterNoEscape('client_id', gs.getProperty('x_xal_idconnect.isc_client_id'));
+        rm_token.setStringParameterNoEscape('client_secret', gs.getProperty('x_xal_idconnect.isc_client_secret'));
+
+        const res_token = rm_token.execute();
+        const resb_token = JSON.parse(res_token.getBody());
+
+        return resb_token.access_token;
+        //}
+
+
+    },
+
+    getPaginatedSearchResults: function(request_body) {
+        let results = [];
+        const access_token = this.getToken();
+        gs.info(JSON.stringify(request_body));
+        let contains_results = true;
+        const limit = 250;
+        let offset = 0;
+
+        while (contains_results) {
+            const rm_search = new sn_ws.RESTMessageV2('SailPoint ISC', 'search');
+            rm_search.setStringParameterNoEscape('tenant', gs.getProperty('x_xal_idconnect.isc_tenant'));
+            rm_search.setStringParameterNoEscape('domain', gs.getProperty('x_xal_idconnect.domain'));
+            rm_search.setRequestHeader('Authorization', 'Bearer ' + access_token);
+            rm_search.setQueryParameter('limit', limit.toString());
+            rm_search.setQueryParameter('offset', offset.toString());
+            rm_search.setRequestBody(JSON.stringify(request_body));
+
+            const res_search = rm_search.execute();
+            const resb_search = res_search.getBody();
+
+            results = results.concat(JSON.parse(res_search.getBody()));
+            offset += 250;
+            if (offset > parseInt(res_search.getHeader('x-total-count'), 10)) {
+                contains_results = false;
+            }
+
+        }
+
+        return results;
+    },
+
+    getSnUserAttribute: function(search_attribute, search_value, return_attribute) {
+        const gr_user = new GlideRecord('sys_user');
+        gr_user.get(search_attribute, search_value);
+
+        if (gr_user.getRowCount() > 0) {
+            return gr_user[return_attribute].toString();
+        }
+
+        return '';
+    },
+    type: 'XalientUtilitiesCore'
+};]]></script>
+        <sys_class_name>sys_script_include</sys_class_name>
+        <sys_created_by>mark.cheek</sys_created_by>
+        <sys_created_on>2025-05-08 18:42:13</sys_created_on>
+        <sys_id>a015d24393d56210a06d7b018bba10ac</sys_id>
+        <sys_mod_count>55</sys_mod_count>
+        <sys_name>XalientUtilitiesCore</sys_name>
+        <sys_package display_value="Xalient Identity Connect" source="x_xal_idconnect">14a34acb93556210a06d7b018bba10ef</sys_package>
+        <sys_policy>read</sys_policy>
+        <sys_scope display_value="Xalient Identity Connect">14a34acb93556210a06d7b018bba10ef</sys_scope>
+        <sys_update_name>sys_script_include_a015d24393d56210a06d7b018bba10ac</sys_update_name>
+        <sys_updated_by>mark.cheek@xalient.com</sys_updated_by>
+        <sys_updated_on>2025-07-22 23:54:09</sys_updated_on>
+    </sys_script_include>
+    <sys_es_latest_script action="INSERT_OR_UPDATE">
+        <id>a015d24393d56210a06d7b018bba10ac</id>
+        <sys_created_by>mark.cheek@xalient.com</sys_created_by>
+        <sys_created_on>2025-06-04 01:41:02</sys_created_on>
+        <sys_id>7a6ea5e71b39221444165391604bcbe8</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>mark.cheek@xalient.com</sys_updated_by>
+        <sys_updated_on>2025-06-04 01:41:02</sys_updated_on>
+        <table>sys_script_include</table>
+        <use_es_latest>true</use_es_latest>
+    </sys_es_latest_script>
+</record_update>

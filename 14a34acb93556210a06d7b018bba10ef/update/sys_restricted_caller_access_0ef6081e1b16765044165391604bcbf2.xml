@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_restricted_caller_access">
+    <sys_restricted_caller_access action="INSERT_OR_UPDATE">
+        <description/>
+        <operation>execute</operation>
+        <rca_type>real_rca</rca_type>
+        <source>ecc6c85a93de36501714f2a08bba10c7</source>
+        <source_scope display_value="Global">global</source_scope>
+        <source_table>wf_activity</source_table>
+        <source_type>4</source_type>
+        <status>2</status>
+        <sys_class_name>sys_restricted_caller_access</sys_class_name>
+        <sys_created_by>system</sys_created_by>
+        <sys_created_on>2026-01-09 13:39:12</sys_created_on>
+        <sys_id>0ef6081e1b16765044165391604bcbf2</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>global</sys_name>
+        <sys_package display_value="Xalient Identity Connect" source="x_xal_idconnect">14a34acb93556210a06d7b018bba10ef</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Xalient Identity Connect">14a34acb93556210a06d7b018bba10ef</sys_scope>
+        <sys_update_name>sys_restricted_caller_access_0ef6081e1b16765044165391604bcbf2</sys_update_name>
+        <sys_updated_by>system</sys_updated_by>
+        <sys_updated_on>2026-01-09 13:39:12</sys_updated_on>
+        <target>a015d24393d56210a06d7b018bba10ac</target>
+        <target_scope display_value="Xalient Identity Connect">14a34acb93556210a06d7b018bba10ef</target_scope>
+        <target_table>sys_script_include</target_table>
+        <target_type>2</target_type>
+    </sys_restricted_caller_access>
+</record_update>
